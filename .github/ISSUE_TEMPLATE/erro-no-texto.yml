@@ -1,0 +1,25 @@
+name: Erro no texto de uma norma
+description: O texto do acervo difere do arquivo oficial da CVM
+labels: ["acervo"]
+body:
+  - type: input
+    id: arquivo
+    attributes:
+      label: Arquivo
+      placeholder: acervo/resolucoes/2022/resolucao-cvm-175.md
+    validations:
+      required: true
+  - type: textarea
+    id: trecho
+    attributes:
+      label: Trecho no acervo
+      description: Copie o trecho com o erro.
+    validations:
+      required: true
+  - type: textarea
+    id: oficial
+    attributes:
+      label: O que diz o arquivo oficial
+      description: Use o link do campo `fonte` do cabeçalho. Indique a página ou o dispositivo, se puder.
+    validations:
+      required: true

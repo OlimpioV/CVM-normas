@@ -1,0 +1,12 @@
+# Configuração do Repositório Normativo CVM.
+# Para valores locais (por exemplo, outra pasta de dados), crie config.local.toml (fora do Git).
+
+# Pasta do acervo (originais, convertidos, banco, logs). Relativa à raiz do projeto ou absoluta.
+# Não deve ficar em pasta sincronizada pelo OneDrive.
+pasta_dados = "dados"
+
+[coleta]
+# Intervalo mínimo entre requisições ao mesmo servidor, em segundos (mínimo 1).
+intervalo_minimo = 3.0
+# Retentativas com espera exponencial (5 s, 10 s, 20 s) para erros 5xx e falhas de rede.
+retentativas = 3

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% set aba = 'relatorios' %}
+{% block titulo %}Faltam no acervo{% endblock %}
+{% block conteudo %}
+<p class="pequeno suave" style="margin:0 0 6px"><a href="/relatorios">Cobertura</a></p>
+<h1>{{ especies.get(familia, familia) }}{{ ' · ' ~ ano if ano }}: atos do catálogo da CVM que faltam no acervo</h1>
+<p class="suave pequeno">{{ itens|length }} ato{{ 's' if itens|length != 1 }}, conforme a última leitura do catálogo oficial.
+  Os links levam à ficha oficial no portal da CVM.</p>
+<div style="overflow-x:auto">
+<table class="grade">
+  <thead><tr><th>Ato</th><th>Data</th><th>Descrição no catálogo</th></tr></thead>
+  <tbody>
+  {% for i in itens %}
+    <tr><td><a href="{{ i.url }}" target="_blank" rel="noopener">{{ i.titulo }} ↗</a></td>
+      <td style="white-space:nowrap">{{ data_br(i.data) }}</td>
+      <td class="pequeno">{{ (i.descricao or '—')|truncate(260) }}</td></tr>
+  {% else %}
+    <tr><td colspan="3" class="suave">Nenhum ato faltando.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

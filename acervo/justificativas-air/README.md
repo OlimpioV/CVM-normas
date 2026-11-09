@@ -1,0 +1,74 @@
+# Justificativas de dispensa de Análise de Impacto Regulatório (AIR)
+
+Justificativas citadas na ficha oficial de cada norma: o documento anexo ou o trecho da decisão do Colegiado que dispensou a AIR. A ficha sem esse link não prova que não houve justificativa.
+
+| Norma | Data | Justificativa |
+|---|---|---|
+| Resolução CVM 247 | 02/10/2026 | [texto](2026/resolucao-cvm-247.md) |
+| Resolução CVM 245 | 01/07/2026 | [texto](2026/resolucao-cvm-245.md) |
+| Resolução CVM 243 | 20/05/2026 | [texto](2026/resolucao-cvm-243.md) |
+| Resolução CVM 241 | 05/03/2026 | [texto](2026/resolucao-cvm-241.md) |
+| Resolução CVM 240 | 05/03/2026 | [texto](2026/resolucao-cvm-240.md) |
+| Resolução CVM 239 | 09/01/2026 | [texto](2026/resolucao-cvm-239.md) |
+| Resolução CVM 236 | 09/12/2025 | [texto](2025/resolucao-cvm-236.md) |
+| Resolução CVM 235 | 21/11/2025 | [texto](2025/resolucao-cvm-235.md) |
+| Resolução CVM 234 | 04/08/2025 | [texto](2025/resolucao-cvm-234.md) |
+| Resolução CVM 233 | 14/07/2025 | [texto](2025/resolucao-cvm-233.md) |
+| Resolução CVM 232 | 03/07/2025 | [texto](2025/resolucao-cvm-232.md) |
+| Resolução CVM 231 | 03/07/2025 | [texto](2025/resolucao-cvm-231.md) |
+| Resolução CVM 230 | 18/06/2025 | [texto](2025/resolucao-cvm-230.md) |
+| Resolução CVM 229 | 22/05/2025 | [texto](2025/resolucao-cvm-229.md) |
+| Resolução CVM 228 | 16/04/2025 | [texto](2025/resolucao-cvm-228.md) |
+| Resolução CVM 227 | 31/03/2025 | [texto](2025/resolucao-cvm-227.md) |
+| Resolução CVM 226 | 06/03/2025 | [texto](2025/resolucao-cvm-226.md) |
+| Resolução CVM 225 | 27/12/2024 | [texto](2024/resolucao-cvm-225.md) |
+| Resolução CVM 224 | 17/12/2024 | [texto](2024/resolucao-cvm-224.md) |
+| Resolução CVM 223 | 16/12/2024 | [texto](2024/resolucao-cvm-223.md) |
+| Resolução CVM 222 | 10/12/2024 | [texto](2024/resolucao-cvm-222.md) |
+| Resolução CVM 221 | 10/12/2024 | [texto](2024/resolucao-cvm-221.md) |
+| Resolução CVM 220 | 11/11/2024 | [texto](2024/resolucao-cvm-220.md) |
+| Resolução CVM 219 | 29/10/2024 | [texto](2024/resolucao-cvm-219.md) |
+| Resolução CVM 218 | 29/10/2024 | [texto](2024/resolucao-cvm-218.md) |
+| Resolução CVM 217 | 29/10/2024 | [texto](2024/resolucao-cvm-217.md) |
+| Resolução CVM 214 | 30/09/2024 | [texto](2024/resolucao-cvm-214.md) |
+| Resolução CVM 213 | 23/09/2024 | [texto](2024/resolucao-cvm-213.md) |
+| Resolução CVM 212 | 23/09/2024 | [texto](2024/resolucao-cvm-212.md) |
+| Resolução CVM 211 | 23/09/2024 | [texto](2024/resolucao-cvm-211.md) |
+| Resolução CVM 208 | 13/08/2024 | [texto](2024/resolucao-cvm-208.md) |
+| Resolução CVM 207 | 13/08/2024 | [texto](2024/resolucao-cvm-207.md) |
+| Resolução CVM 206 | 04/07/2024 | [texto](2024/resolucao-cvm-206.md) |
+| Resolução CVM 205 | 05/06/2024 | [texto](2024/resolucao-cvm-205.md) |
+| Resolução CVM 203 | 23/05/2024 | [texto](2024/resolucao-cvm-203.md) |
+| Resolução CVM 202 | 10/05/2024 | [texto](2024/resolucao-cvm-202.md) |
+| Resolução CVM 201 | 27/03/2024 | [texto](2024/resolucao-cvm-201.md) |
+| Resolução CVM 200 | 12/03/2024 | [texto](2024/resolucao-cvm-200.md) |
+| Resolução CVM 199 | 09/02/2024 | [texto](2024/resolucao-cvm-199.md) |
+| Resolução CVM 198 | 31/01/2024 | [texto](2024/resolucao-cvm-198.md) |
+| Resolução CVM 197 | 26/12/2023 | [texto](2023/resolucao-cvm-197.md) |
+| Resolução CVM 196 | 20/12/2023 | [texto](2023/resolucao-cvm-196.md) |
+| Resolução CVM 195 | 30/11/2023 | [texto](2023/resolucao-cvm-195.md) |
+| Resolução CVM 194 | 17/11/2023 | [texto](2023/resolucao-cvm-194.md) |
+| Resolução CVM 193 | 20/10/2023 | [texto](2023/resolucao-cvm-193.md) |
+| Resolução CVM 192 | 18/10/2023 | [texto](2023/resolucao-cvm-192.md) |
+| Resolução CVM 191 | 09/10/2023 | [texto](2023/resolucao-cvm-191.md) |
+| Resolução CVM 190 | 09/10/2023 | [texto](2023/resolucao-cvm-190.md) |
+| Resolução CVM 189 | 09/10/2023 | [texto](2023/resolucao-cvm-189.md) |
+| Resolução CVM 188 | 09/10/2023 | [texto](2023/resolucao-cvm-188.md) |
+| Resolução CVM 187 | 27/09/2023 | [texto](2023/resolucao-cvm-187.md) |
+| Resolução CVM 186 | 14/07/2023 | [texto](2023/resolucao-cvm-186.md) |
+| Resolução CVM 185 | 12/07/2023 | [texto](2023/resolucao-cvm-185.md) |
+| Resolução CVM 184 | 31/05/2023 | [texto](2023/resolucao-cvm-184.md) |
+| Resolução CVM 183 | 11/05/2023 | [texto](2023/resolucao-cvm-183.md) |
+| Resolução CVM 182 | 11/05/2023 | [texto](2023/resolucao-cvm-182.md) |
+| Resolução CVM 181 | 28/03/2023 | [texto](2023/resolucao-cvm-181.md) |
+| Resolução CVM 180 | 22/03/2023 | [texto](2023/resolucao-cvm-180.md) |
+| Resolução CVM 177 | 23/01/2023 | [texto](2023/resolucao-cvm-177.md) |
+| Resolução CVM 174 | 05/12/2022 | [texto](2022/resolucao-cvm-174.md) |
+| Resolução CVM 173 | 29/11/2022 | [texto](2022/resolucao-cvm-173.md) |
+| Resolução CVM 172 | 01/11/2022 | [texto](2022/resolucao-cvm-172.md) |
+| Resolução CVM 171 | 27/10/2022 | [texto](2022/resolucao-cvm-171.md) |
+| Resolução CVM 170 | 13/10/2022 | [texto](2022/resolucao-cvm-170.md) |
+| Resolução CVM 169 | 20/09/2022 | [texto](2022/resolucao-cvm-169.md) |
+| Resolução CVM 167 | 13/09/2022 | [texto](2022/resolucao-cvm-167.md) |
+| Resolução CVM 166 | 01/09/2022 | [texto](2022/resolucao-cvm-166.md) |
+| Resolução CVM 165 | 18/08/2022 | [texto](2022/resolucao-cvm-165.md) |

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Se usar este projeto ou o acervo, cite-o desta forma e mantenha o CREDITOS.md (inclui a menção ao ctresb/leis, que inspirou o projeto)."
+title: "Repositório Normativo CVM"
+abstract: "Coleta, armazenamento, consulta e atualização do acervo normativo da Comissão de Valores Mobiliários (CVM), com rastreabilidade das fontes, e o acervo em Markdown."
+type: software
+authors:
+  - alias: "OlimpioV"
+repository-code: "https://github.com/OlimpioV/CVM-normas"
+url: "https://github.com/OlimpioV/CVM-normas"
+license: AGPL-3.0-only
+version: "1.0.0"
+date-released: "2026-11-10"
+keywords:
+  - CVM
+  - legislação
+  - mercado de capitais
+  - normas
+  - Brasil
+references:
+  - type: software
+    title: "leis"
+    authors:
+      - name: "João Davi"
+    repository-code: "https://github.com/ctresb/leis"
+    notes: "Projeto que inspirou a organização do acervo em Markdown."

@@ -1,0 +1,346 @@
+---
+id: "resolucao-cvm-189"
+titulo: "Resolução CVM 189"
+especie: "Resolução"
+numero: "189"
+ano: 2023
+ementa: "Aprova a Orientação Técnica OCPC 07(R1), que trata da Evidenciação na Divulgação de Relatórios Financeiros para Fins Gerais."
+data_edicao: "2023-10-09"
+data_publicacao_dou: "2023-10-19"
+inicio_vigencia: "2023-11-01"
+fim_vigencia: null
+situacao: "vigente"
+situacao_fonte: "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol189.html"
+situacao_verificada_em: "2026-11-06"
+ficha_oficial: "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol189.html"
+versao: "Original"
+versao_aviso: "Redação original (não é texto consolidado)."
+fonte: "https://conteudo.cvm.gov.br/legislacao/resolucoes/anexos/100/resol189.docx"
+fonte_sha256: "cd3f920f94b98d3054ae9beb5a3c713ccb3cd080dd060f4a643553413987d471"
+fonte_coletada_em: "2026-11-06"
+conversor: "docx-ooxml/9"
+qualidade: "alta: DOCX oficial; todas as palavras do original estão no Markdown; conferido com o PDF oficial (cobertura 100.00% / 99.95%); avisos: 1 nota(s) de rodapé incorporada(s) ao fim do texto; tabela convertida em HTML simples; conferir mesclagens de células; citação entre aspas sem fechamento; encerrada automaticamente — conferir"
+relacoes: []
+audiencias_publicas: []
+justificativa_air: "justificativas-air/2023/resolucao-cvm-189.md"
+aviso_vigencia: "Situação conforme as marcações da ficha oficial da CVM consultada em 06/11/2026. Revogações feitas pelo texto de outras normas ainda não são cruzadas automaticamente; confirme a vigência na fonte oficial antes de citar."
+aviso: "Texto convertido automaticamente a partir do arquivo oficial da CVM, apenas para consulta. Em caso de divergência, prevalece o original publicado pela CVM."
+---
+
+# RESOLUÇÃO CVM Nº 189, DE 09 DE OUTUBRO DE 2023
+
+Aprova a Orientação Técnica OCPC 07(R1), que trata da Evidenciação na Divulgação de Relatórios Financeiros para Fins Gerais.
+
+O PRESIDENTE DA COMISSÃO DE VALORES MOBILIÁRIOS - CVM torna público que o Colegiado, em reunião realizada em 04 de outubro de 2023, com fundamento nos §§ 3º e 5º do art. 177 da Lei n° 6.404, de 15 de dezembro de 1976, combinados com os incisos II e IV do § 1° do art. 22 da Lei n° 6.385, de 7 de dezembro de 1976, APROVOU a seguinte Resolução:
+
+**Art. 1º** Torna obrigatório para as companhias abertas a Orientação Técnica OCPC 07(R1), que trata da Evidenciação na Divulgação de Relatórios Financeiros para Fins Gerais, emitido pelo Comitê de Pronunciamentos Contábeis – CPC, conforme anexo “A” à presente Resolução.
+
+**Art. 2º** Fica revogada a Resolução CVM nº 152, de 15 de junho de 2022, na data em que esta Resolução entrar em vigor.
+
+**Art. 3º** Esta Resolução entra em vigor em 1º de novembro de 2023.
+
+Assinado eletronicamente por
+
+JOÃO PEDRO BARROSO DO NASCIMENTO
+
+Presidente
+
+COMITÊ DE PRONUNCIAMENTOS CONTÁBEIS
+
+ORIENTAÇÃO TÉCNICA OCPC 07 (R1)
+
+Evidenciação na Divulgação dos Relatórios Financeiros para Fins Gerais
+
+<table>
+<tr><td>Sumário</td><td>Item</td></tr>
+<tr><td>OBJETIVO</td><td>1 – 2</td></tr>
+<tr><td>ALCANCE</td><td>3 – 5</td></tr>
+<tr><td>EVIDENCIAÇÃO JÁ REGULAMENTADA</td><td>6 – 30</td></tr>
+<tr><td>Principais diretrizes gerais contidas na Estrutura Conceitual para Relatórios Financeiros</td><td>6 – 19</td></tr>
+<tr><td>Principais diretrizes gerais contidas no Pronunciamento Técnico CPC 26</td><td>20 – 28</td></tr>
+<tr><td>Principais diretrizes gerais contidas na Lei das Sociedades por Ações</td><td>29 – 30</td></tr>
+<tr><td>DIRETRIZES ADICIONAIS</td><td>31 – 39</td></tr>
+<tr><td>IAS 1 – Presentation of Financial Statements e IFRS Practice Statement 2: Making Materiality Judgements</td><td>40 – 46</td></tr>
+<tr><td>DISPOSIÇÕES TRANSITÓRIAS</td><td>47</td></tr>
+<tr><td>RAZÕES DA EMISSÃO DESTA ORIENTAÇÃO SOBRE A ELABORAÇÃO DAS NOTAS EXPLICATIVAS</td><td>IN1 – IN10</td></tr>
+</table>
+
+OBJETIVO
+
+1. O objetivo desta Orientação é tratar dos requisitos básicos de elaboração e evidenciação a serem observados quando da divulgação dos relatórios financeiros de propósito geral.
+
+2. Esta Orientação está tratando, especificamente, da evidenciação das informações próprias das demonstrações contábil-financeiras anuais e intermediárias, em especial das contidas nas notas explicativas.
+
+ALCANCE
+
+3. Esta Orientação trata essencialmente de questões de divulgação, não alcançando questões de reconhecimento e de mensuração.
+
+4. Ela consolida exigências já existentes em Pronunciamentos, Interpretações e outras Orientações deste Comitê, nas disposições do IASB não divulgadas por este Comitê, bem como na Lei, sem alterar tais exigências.
+
+5. Para fins desta Orientação, o significado do termo relevância deve ser considerado no contexto apresentado no Pronunciamento Técnico CPC 00 - Estrutura Conceitual para Relatório Financeiro, em que é definido como uma característica qualitativa fundamental da informação financeira útil, que é capaz de fazer diferença nas decisões tomadas pelos usuários com base nessas informações. Esse conceito abrange ainda materialidade como um aspecto da relevância, considerando-se as definições estabelecidas nos Prounciamentos Técnicos CPC 26 – Apresentação das Demonstrações Contábeis e CPC 23 - Políticas Contábeis, Mudança de Estimativa e Retificação de Erro. Por fim, esta Orientação utiliza a expressão políticas contábeis, no contexto da definição incluída no CPC 23, a qual abrange também os termos práticas contábeis e critérios contábeis.
+
+EVIDENCIAÇÃO JÁ REGULAMENTADA
+
+Principais diretrizes gerais contidas na Estrutura Conceitual para Relatório Financeiro
+
+6. O objetivo do relatório financeiro para fins gerais, conforme estabelecido no item 1.2 do Pronunciamento Técnico CPC 00 - Estrutura Conceitual para Relatório Financeiro, “é fornecer informações financeiras sobre a entidade que reporta que sejam úteis para investidores, credores por empréstimos e outros credores, existentes e potenciais, na tomada de decisões referente à oferta de recursos à entidade.” (s.a.)
+
+7. Informações financeiras úteis são aquelas revestidas das características qualitativas fundamentais do relatório financeiro para fins gerais. Essas características, conforme esse mesmo Pronunciamento, item 2.5, são “relevância e representação fidedigna”. (s.a.)
+
+8. O item 2.6 dessa Estrutura Conceitual define: “Informações financeiras relevantes são capazes de fazer diferença nas decisões tomadas pelos usuários.” (s.a.)
+
+9. E o item 2.11 reforça: “A informação é material se a sua omissão, distorção ou obscuridade puder influenciar, razoavelmente, as decisões que os principais usuários de relatórios financeiros para fins gerais tomam com base nesses relatórios, que fornecem informações financeiras sobre entidade específica que reporta”. (s.a.)
+
+10. Depreende-se desses dispositivos que todas as informações próprias de demonstrações contábeis de conhecimento da entidade que possam de fato influenciar investidores e credores, e apenas essas, devem ser divulgadas. A divulgação de informações irrelevantes costuma causar o mau efeito de desviar a atenção do usuário, o que contraria frontalmente o objetivo do relatório financeiro para fins gerais.
+
+11. O item 2.13 afirma, abordando a demonstração contábil (que inclui as notas explicativas): “Para ser representação perfeitamente fidedigna, a representação tem três características. Ela é completa, neutra e isenta de erros. Obviamente, a perfeição nunca ou raramente é atingida. O objetivo é maximizar essas qualidades tanto quanto possível.” (s.a.)
+
+12. Esse item evidencia a responsabilidade do preparador com relação à completude da informação, à obrigatoriedade de que a informação e os comentários relativos a ela sejam neutros, o que inclui a qualificação e a adjetivação e o zelo para a inexistência de erros.
+
+13. Cita o item 2.4: “Se informações financeiras devem ser úteis, elas devem ser relevantes e representar fidedignamente aquilo que pretendem representar. A utilidade das informações financeiras é aumentada se forem comparáveis, verificáveis, tempestivas e compreensíveis.” (s.a.)
+
+14. Chama-se a atenção, nesse item 2.4, à característica da compreensibilidade, que inclui a nomenclatura das contas nas demonstrações e a redação utilizada nas notas explicativas. O conhecimento mínimo exigido do usuário de demonstrações contábeis não necessariamente abrange a mesma profundidade dos especialistas, nem as mesmas terminologias por demais específicas da entidade ou do segmento econômico a que a entidade pertence. Assim, apenas quando absolutamente inevitável deve ser utilizado linguajar técnico específico da entidade ou do setor. É conveniente considerar, nesse caso, a apresentação de glossário completo e conciso junto com as demonstrações.
+
+15. A materialidade, conforme a Estrutura Conceitual, em termos gerais, é baseada na natureza ou na magnitude da informação, ou em ambas. Consequentemente, não se pode a priori especificar um limite quantitativo uniforme para a materialidade ou predeterminar o que seria julgado material para uma situação particular. Em razão disso, o julgamento sobre a relevância da informação será, praticamente, caso a caso. E a materialidade é o tratamento específico da relevância para uma entidade em particular. Diz o item 2.11: “... a materialidade é um aspecto de relevância específico da entidade com base na natureza ou magnitude, ou ambas, dos itens aos quais as informações se referem no contexto do relatório financeiro da entidade individual”. (s.a.)
+
+16. Assim, normalmente os números significativos para o porte da entidade são relevantes por sua influência potencial nas decisões dos usuários, mas determinados valores, mesmo que pequenos em termos absolutos ou percentuais, podem ser materiais para determinada entidade em função não do seu tamanho, mas de sua natureza. Isso significa que podem ser de interesse para decisão dos usuários pela importância da informação em termos de governabilidade, de possível impacto futuro, de informação social etc.
+
+17. Resumindo, a Estrutura Conceitual determina que toda a informação é material e deve ser divulgada se sua omissão ou sua divulgação distorcida puder influenciar decisões que os usuários tomam como base no relatório financeiro para fins gerais da entidade específica que reporta a informação. Consequentemente, se não tiver essa característica, a informação não é material e, portanto, não é relevante, não devendo ser divulgada. Além disso, a informação, quando for relevante, deve considerar também (i) as características da representação fidedigna, sendo completa, neutra e isenta de erros; e (ii) as características qualitativas de melhoria da informação como sendo, comparáveis, verificáveis, tempestivas e compreensíveis.
+
+18. Esse conjunto citado nos itens anteriores evidencia que o foco a ser considerado na elaboração e na análise das demonstrações contábeis é o da relevância das informações necessárias ao processo decisório de investidores e credores.
+
+19. Consequentemente, não podem faltar nas demonstrações contábeis de determinada entidade as informações relevantes de que a entidade tenha conhecimento, bem como não devem ser divulgadas informações imateriais que não sejam relevantes.
+
+Principais diretrizes gerais contidas no Pronunciamento Técnico CPC 26
+
+20. O Pronunciamento Técnico CPC 26 – Apresentação das Demonstrações Contábeis determina, em seus itens 29 a 31, que:
+
+“29. A entidade deve apresentar separadamente nas demonstrações contábeis cada classe material de itens semelhantes. A entidade deve apresentar separadamente os itens de natureza ou função distinta, a menos que sejam imateriais.” (s.a.)
+
+“30. ... Se um item não for individualmente material, deve ser agregado a outros itens, seja nas demonstrações contábeis, seja nas notas explicativas.” Mas observado que “um item pode não ser suficientemente material para justificar a sua apresentação individualizada nas demonstrações contábeis, mas pode ser suficientemente material para ser apresentado de forma individualizada nas notas explicativas.”
+
+> “30A. ... A entidade não deve reduzir a compreensibilidade das suas demonstrações contábeis, ocultando informações materiais com informações irrelevantes ou por meio da agregação de itens materiais que têm diferentes naturezas ou funções.
+
+> “31. ...A entidade não precisa fornecer uma divulgação específica, requerida por um Pronunciamento Técnico, Interpretação ou Orientação do CPC, se a informação resultante da divulgação não for material.” (s.a.)
+
+> 21. Esses três itens, resumidamente, levam à conclusão de que a evidenciação, tanto nas demonstrações quanto nas notas explicativas, deve ser de informações relativas a itens agrupados pela semelhança (não igualdade) em sua natureza e na sua função. Todavia, se irrelevantes, podem ficar inseridos em outros grupos para fins de apresentação.
+
+> 22. E outra conclusão fundamental: qualquer informação específica requisitada por qualquer Pronunciamento, Interpretação ou Orientação que não seja material não deve ser divulgada, inclusive para não desviar a atenção do usuário, com exceção da que for requerida expressamente por órgão regulador.
+
+> 22A É fundamental que não se reduza a compreensibilidade das informações divulgando-se informações irrelevantes que atrapalhem a leitura e a compreensão das relevantes e nem agregando-se itens materiais com naturezas ou funções diferentes.
+
+> 23. Quanto à forma de apresentação, o item 113 do mesmo Pronunciamento determina que “As notas explicativas devem ser apresentadas, tanto quanto seja praticável, de forma sistemática. Na determinação de forma sistemática, a entidade deve considerar os efeitos sobre a compreensibilidade e comparabilidade das suas demonstrações contábeis. Cada item das demonstrações contábeis deve ter referência cruzada com a respectiva informação apresentada nas notas explicativas.”
+
+24. Já o item 114, ao citar diversas ordens de apresentação das notas explicativas, (a entidade escolhe a que melhor se aplica à sua situação), evidencia aceitar qualquer delas:
+
+(a) dar destaque para as áreas de atividades que a entidade considera mais relevantes para a compreensão do seu desempenho financeiro e da posição financeira, como agrupar informações sobre determinadas atividades operacionais;
+
+(b) agrupar informações sobre contas mensuradas de forma semelhante, como os ativos
+
+mensurados ao valor justo; ou
+
+(c) seguir a ordem das contas das demonstrações do resultado e de outros resultados abrangentes e do balanço patrimonial,...”
+
+Vê-se, portanto, que a alternativa (c) acima, a mais utilizada na prática (no Brasil normalmente começando pelas contas do balanço, e não pelas do resultado), não é a única alternativa para ordenamento das notas explicativas.
+
+25. Em algumas circunstâncias pode ser necessário ou desejável alterar a ordem de determinados itens nas notas explicativas. Por exemplo, a informação sobre variações no valor justo reconhecidas no resultado pode ser divulgada juntamente com a informação sobre vencimentos de instrumentos financeiros, embora a primeira se relacione com a demonstração do resultado e a última se relacione com o balanço patrimonial. Contudo, deve ser utilizada sempre a estrutura mais sistemática possível nas notas explicativas.
+
+26. O item 117 do mesmo Pronunciamento determina que “A entidade deve divulgar informações materiais da política contábil (ver item 7). As informações de política contábil são materiais se, quando consideradas em conjunto com outras informações incluídas nas demonstrações contábeis da entidade, pode-se razoavelmente esperar que influenciem as decisões que os principais usuários das demonstrações contábeis para fins gerais tomam com base nessas demonstrações contábeis.” Os itens 117A a 117E detalham demais aspectos de materialidade na divulgação de políticas contábeis (vejam-se os itens 40 a 46 desta Orientação que também cuidam disso).
+
+26A O item 117A define claramente: “As informações de política contábil que se relacionam com transações, outros eventos ou condições imateriais e não precisam ser divulgadas. As informações de política contábil podem, no entanto, ser materiais devido à natureza das transações relacionadas, outros eventos ou condições, mesmo que os valores sejam imateriais. No entanto, nem todas as informações de política contábil relacionadas a transações materiais, outros eventos ou condições são em si materiais.” Ou seja, à divulgação da política contábil aplica-se o mesmo que aos valores nas demonstrações e nas notas no que diz respeito à materialidade, o que inclui a natureza das transações ou outros aspectos. E deixa claro que às vezes os valores são materiais, mas a política contábil de como tratá-los pode não ser.
+
+26B O 117B fornece diversos exemplos em que se pode, pela sua natureza, determinar que é material determinada política contábil, como quando de alteração material de informação, escolha entre opções, exigência de julgamentos ou pressupostos significativos, situações complexas que exigem facilitar o entendimento do usuário.
+
+26C Os itens 117C a 117E mencionam que o detalhamento de como a entidade aplicou determinada política em função de sua própria circunstância específica é mais útil do que informação padronizada; ainda chamam a atenção para o caso de informações de política contábil imaterial que atrapalham o entendimento de política relevante etc.
+
+27. O item 116 esclarece: “As notas explicativas que proporcionam informação acerca da base para a elaboração das demonstrações contábeis e as políticas contábeis específicas podem ser apresentadas como seção separada das demonstrações contábeis.”. Note-se que é uma opção, e não obrigação. Essas informações sobre a base de elaboração e as políticas contábeis podem ser apresentadas nas notas que cuidam especificamente dos elementos das demonstrações contábeis.
+
+28. Depreende-se dos itens anteriores que a entidade somente deve divulgar as bases de elaboração das demonstrações e suas políticas contábeis que sejam suas particulares, suas específicas. Dessa forma, as políticas contábeis que não lhe sejam aplicáveis não devem ser divulgadas, assim como políticas contábeis baseadas em normas que não apresentam qualquer alternativa. Isso abrange as normas tanto em vigor quanto aquelas que vigerão futuramente. Nos raros casos em que seja importante informar o usuário do teor da norma ou de parte dela para sua melhor compreensão das demonstrações contábeis, isso deverá ser feito mediante resumo em linguagem acessível aos usuários em geral.
+
+Principais diretrizes gerais contidas na Lei das Sociedades por Ações
+
+29. A Lei no 6.404/76 expressamente exige notas que esclareçam sobre a situação patrimonial e os resultados, e menciona a obrigação de apresentação das políticas contábeis que sejam específicas e que se apliquem a negócios e eventos significativos. Seu art. 176 determina:
+
+> “§ 5o As notas explicativas devem:
+
+> I – apresentar informações sobre a base de preparação das demonstrações financeiras e das práticas contábeis específicas selecionadas e aplicadas para negócios e eventos significativos;
+
+> ....
+
+> IV – indicar:
+
+> a) os principais critérios de avaliação dos elementos patrimoniais...” (s.a.)
+
+> 30. Ou seja, a Lei das S/A segue na mesma linha de exigir notas sobre bases de elaboração e sobre políticas contábeis que sejam específicas da entidade que reporta e que sejam relativas a itens relevantes. A menção a bases e políticas não específicas da entidade e referentes a itens não relevantes também pode desviar a atenção do usuário.
+
+> Sumário das principais diretrizes gerais contidas nos textos citados
+
+> O CPC salienta, então, que esses documentos citados especificam que:
+
+> A. Todas as informações evidenciadas devem ser relevantes para os usuários externos. E só são relevantes se influenciarem no processo de decisão dos investidores e credores. E as não relevantes não devem ser divulgadas.
+
+> B. A relevância em geral e a materialidade no caso específico da entidade, por sua vez, abrangem os conceitos de magnitude e de natureza da informação, olhadas sob o ponto de vista dos usuários.
+
+> C. Somente as informações relevantes e materiais e específicas à entidade devem ser evidenciadas, tanto as relativas às políticas contábeis quanto a todas as demais notas, inclusive aquelas relativas a prováveis efeitos de políticas contábeis a serem adotadas no futuro.
+
+> D. A menção, em Pronunciamentos, Interpretações e Orientações do CPC e em Lei, de exigências de divulgação deve sempre ser interpretada à luz da relevância e materialidade da informação a ser divulgada, mesmo que apareçam as expressões “divulgação mínima”, “no mínimo” e assemelhadas. Assim, mesmo que um desses documentos “exija” determinada nota explicativa, isso é sempre obrigatório apenas se a informação for material e, consequentemente, relevante para a tomada de decisão dos usuários.
+
+> E. Por outro lado, nenhuma informação relevante e material que possa influenciar o usuário das demonstrações contábeis da entidade pode deixar de ser evidenciada, mesmo que não haja explícita menção a ela em Lei ou em documento do CPC.
+
+> F. O espírito de simples cumprimento de check-list não atende, absolutamente, ao necessário para o atingimento dos objetivos do relatório financeiro para fins gerais.
+
+> DIRETRIZES ADICIONAIS
+
+> 31. Apesar de não especificamente mencionada nesses documentos citados, no conjunto dos Pronunciamentos, Interpretações e Orientações deste CPC está sempre presente a necessidade de ênfase às informações relativas a todos os temas que possam representar riscos para a entidade. Por exemplo, no Pronunciamento Técnico CPC 26, isso pode ser visto explicitamente nos itens 114, 125, 126 e 128. Consequentemente, este CPC entende que dentro do conceito de relevância deve sempre ser considerada essa característica.
+
+> 32. Nas notas explicativas sobre as bases de elaboração das demonstrações contábeis e as políticas contábeis específicas da entidade não devem ser repetidos os textos dos atos normativos, mas apenas resumidos os aspectos principais relevantes e aplicáveis à entidade.
+
+> 33. Podem ser feitas apenas menções aos números e nomes dos documentos deste CPC e um resumo dos aspectos principais relevantes e especificamente aplicáveis à entidade, mas não deve haver transcrição de trechos desses documentos.
+
+> 34. Quando da existência de escolha de uma entre duas ou mais políticas contábeis permitidas à entidade e quando de mudança de política contábil, nota deve esclarecer detalhadamente sobre tais fatos, considerando as determinações específicas estabelecidas pelo CPC 23, em especial as razões da escolha ou da mudança e consequências junto às demonstrações contábeis.
+
+> 35. As notas sobre políticas contábeis podem ser inseridas juntamente com as notas relativas aos itens constantes das demonstrações contábeis a que se referem.
+
+> 36. A ordem de apresentação das notas explicativas, após aquelas relativas ao contexto operacional, à base de elaboração das demonstrações contábeis (se for utilizada) e à declaração de conformidade, pode seguir a ordem de relevância dos assuntos tratados, obedecida sempre a exigência de referência cruzada entre as notas e os itens das demonstrações contábeis ou a outras notas a que se referem.
+
+> 37. Na redação das notas não deve haver, na medida do possível, repetição de fatos, políticas e informações outras, a fim de se evitar o desvio da atenção do usuário.
+
+> 38. A administração da entidade deve, na nota de declaração de conformidade, afirmar que todas as informações relevantes próprias das demonstrações contábeis, e somente elas, estão sendo evidenciadas, e que correspondem às utilizadas por ela na sua gestão.
+
+> 39. Na avaliação de relevância e materialidade, devem ser consideradas, de maneira segregada, as informações das demonstrações individuais e as informações das demonstrações consolidadas, pois é possível que determinada informação seja relevante/material para um caso e não seja para o outro.
+
+> CPC 26 – Apresentação das Demonstrações Contábeis e IFRS Practice Statement 2: Making Materiality Judgements
+
+> 40. Os itens 117 a 117E do CPC 26 – Apresentação das Demonstrações Contábeis – especificam, como já tratado, que informações de política contábil relacionadas a transações imateriais, outros eventos ou condições não precisam ser divulgadas e também incluem exemplos de circunstâncias que a entidade pode considerar em sua avaliação se as informações de política contábil são materiais para suas demonstrações contábeis.
+
+> 41. O IFRS Practice Statement 2: Making Materiality Judgements (PS2) (denominado Demonstração da Prática de IFRS 2 pelo IBRACON[^1]) apresenta um diagrama, o de número 2, que ilustra como uma entidade avalia se as informações de política contábil são materiais e, portanto, devem ser divulgados, referenciando aqueles itens. Os exemplos a seguir foram incluídos para melhor se entender o conceito de materialidade na aplicação de políticas contábeis, em nada afetando quaisquer normas vigentes, inclusive sobre evidenciação.
+
+> Diagrama 2 do Practice Statement- Determinando se a informação de política contábil é material
+
+> EXEMPLOS DE APLICAÇÃO
+
+> 42. Exemplo A do PS2: Julgamentos de materialidade sobre a aplicação de políticas contábeis
+
+> Uma entidade tem uma política de capitalizar gastos sobre itens do imobilizado superiores a um limite especificado e reconhecer quaisquer valores menores como despesa. O CPC 27 – Ativo Imobilizado - requer que o custo de um item do imobilizado seja reconhecido como um ativo quando os critérios do item 7 forem cumpridos.
+
+> A entidade avaliou que sua política contábil – não capitalizando gastos abaixo de um limite específico – não terá um efeito material sobre as demonstrações contábeis do período corrente ou sobre demonstrações contábeis futuras, porque não se poderia razoavelmente esperar que informações que refletem a capitalização e amortização desses gastos influenciem as decisões tomadas pelos principais usuários das demonstrações contábeis da entidade.
+
+> Desde que tal política não tenha um efeito material sobre as demonstrações contábeis e não tenha sido estabelecida para atingir intencionalmente uma determinada apresentação da posição financeira da entidade, desempenho financeiro ou fluxos de caixa, as demonstrações contábeis da entidade cumprem o CPC 27. Apesar disso, tal política é reavaliada em cada período de relatório para garantir que seu efeito sobre as demonstrações contábeis da entidade permanece imaterial.
+
+> 43. Exemplo B do PS2: Julgamentos de materialidade sobre divulgações especificadas por Normas IFRS
+
+> Uma entidade apresenta o imobilizado como uma rubrica separada em sua demonstração da posição financeira. O CPC 27 – Ativo Imobilizado estabelece requisitos de divulgação específicos, incluindo a divulgação do valor de compromissos contratuais para a aquisição de imobilizado (item 74(c)).
+
+> Ao elaborar suas demonstrações contábeis, a entidade avalia se as divulgações especificadas no CPC 27 são informações materiais. Mesmo se o imobilizado for apresentado como uma rubrica separada na demonstração da posição financeira, nem todas as divulgações especificadas no CPC 27 serão automaticamente requeridas. Na ausência de quaisquer considerações qualitativas (vide itens 46–51), se o valor de compromissos contratuais para a aquisição de imobilizado não for material, a entidade não é obrigada a divulgar essas informações.
+
+> 44. Exemplo I do PS2: Informações sobre uma transação com partes relacionadas avaliada como material
+
+> Uma entidade identificou medidas de sua lucratividade como as medidas de grande interesse para os principais usuários de suas demonstrações contábeis. No período de relatório corrente, a entidade assinou um contrato de cinco anos com a empresa ABC. A empresa ABC prestará à entidade serviços de manutenção para os escritórios da entidade por uma taxa anual. A empresa ABC é controlada por um membro do pessoal-chave da administração da entidade. Portanto, a empresa ABC é uma parte relacionada da entidade.
+
+> O CPC 05 – Divulgação sobre Partes Relacionadas - requer que uma entidade divulgue, para cada transação com partes relacionadas que ocorreu durante o período, a natureza da relação com a parte relacionada, bem como as informações sobre a transação e os saldos em aberto, inclusive compromissos, necessários para os usuários entenderem o efeito potencial da relação sobre as demonstrações contábeis.
+
+> Ao elaborar suas demonstrações contábeis, a entidade avaliou se as informações sobre a transação com a empresa ABC eram materiais.
+
+> A entidade iniciou sua avaliação de uma perspectiva quantitativa e avaliou o impacto da transação com partes relacionadas em comparação às medidas de lucratividade da entidade. Tendo concluído inicialmente que o impacto da transação com partes relacionadas não era material de uma perspectiva meramente quantitativa, a entidade avaliou adicionalmente a presença de quaisquer fatores qualitativos.
+
+> Como observa o CPC 05, partes relacionadas podem celebrar transações que partes não relacionadas não celebrariam, e as transações podem ser precificadas por valores que diferem do preço para transações entre partes não relacionadas.
+
+> A entidade identificou o fato de que o contrato de manutenção foi concluído com uma parte relacionada como uma característica que torna as informações sobre essa transação mais propensas a influenciar as decisões de seus principais usuários.
+
+> A entidade avaliou adicionalmente a transação de uma perspectiva quantitativa para determinar se é razoável esperar que o impacto da transação poderia influenciar as decisões dos principais usuários quando consideradas com o fato de que a transação era com uma parte relacionada (ou seja, a presença de um fator qualitativo reduz o limite quantitativo). Tendo considerado que a transação era com uma parte relacionada, a entidade concluiu que é razoável esperar que o impacto seria grande o suficiente para influenciar as decisões dos principais usuários. Assim, a entidade avaliou as informações sobre a transação com a empresa ABC como materiais e divulgou essas informações em suas demonstrações contábeis.
+
+> 45. Exemplo J do PS2: Informações sobre uma transação com partes relacionadas avaliada como imaterial
+
+> Uma entidade identificou medidas de sua lucratividade como as medidas de grande interesse para os principais usuários de suas demonstrações contábeis. A entidade possui uma grande frota de veículos. No período de relatório corrente, a entidade vendeu um veículo quase totalmente depreciado para a empresa DEF. A entidade transferiu o veículo por uma contraprestação total consistente com seu valor de mercado e seu valor contábil. A empresa DEF é controlada por um membro do pessoal-chave da administração da entidade. Portanto, a empresa DEF é uma parte relacionada da entidade.
+
+> Ao elaborar suas demonstrações contábeis, a entidade avaliou se as informações sobre a transação com a empresa DEF eram materiais.
+
+> Como no Exemplo I anterior, a entidade iniciou sua avaliação de uma perspectiva quantitativa e avaliou o impacto da transação com partes relacionadas em comparação às medidas de lucratividade da entidade. Tendo concluído inicialmente que o impacto da transação com partes relacionadas não era material de uma perspectiva meramente quantitativa, a entidade avaliou adicionalmente a presença de quaisquer fatores qualitativos.
+
+> A entidade transferiu o veículo por uma contraprestação total consistente com seu valor de mercado e seu valor contábil. Contudo, a entidade identificou o fato de que o veículo foi vendido a uma parte relacionada como uma característica que torna as informações sobre essa transação mais propensas a influenciar as decisões de seus principais usuários.
+
+> A entidade avaliou adicionalmente a transação de uma perspectiva quantitativa, mas concluiu que era razoável esperar que seu impacto fosse muito pequeno para influenciar as decisões dos principais usuários, mesmo quando consideradas com o fato de que a transação era com uma parte relacionada. As informações sobre a transação com a empresa DEF foram consequentemente avaliadas como imateriais e não divulgadas nas demonstrações contábeis da entidade.
+
+> 46. Exemplo T do PS2: Fazer julgamentos de materialidade sobre informações de política contábil que apenas duplicam os requisitos dos Pronunciamentos Contábeis
+
+> Neste exemplo, considera-se que o ativo imobilizado é material para as demonstrações contábeis de uma entidade.
+
+> A entidade não possui ativos intangíveis ou ágio e não reconheceu uma perda por redução ao valor recuperável em seu imobilizado nos períodos de relatório atual ou comparativo.
+
+> Em períodos de relatório anteriores, a entidade divulgou informações de política contábil relacionadas à redução ao valor recuperável de ativos não circulantes que repetiam os requisitos dispostos no CPC 01 – Redução ao Valor Recuperável de Ativos - e não forneciam informações específicas da entidade. A entidade divulgou que:
+
+> • Os valores contábeis dos ativos intangíveis do grupo e de seu imobilizado são revisados a cada data de relatório para determinar se há indicação de redução ao valor recuperável. Caso exista tal indicação, o valor recuperável do ativo é estimado. Para ágio e intangíveis com vida útil indefinida, o valor recuperável é estimado, no mínimo, anualmente;
+
+> • Uma perda por redução ao valor recuperável é reconhecida na demonstração de resultado sempre que o valor contábil de um ativo ou sua unidade geradora de caixa excede o seu valor recuperável;
+
+> • O valor recuperável dos ativos é o maior entre o valor justo menos custos para vender e o seu valor em uso. Na mensuração do valor em uso, os fluxos de caixa futuros estimados são descontados a valor presente usando uma taxa de desconto antes dos impostos que reflita as avaliações atuais de mercado do valor do dinheiro no tempo e dos riscos específicos do ativo. Para um ativo que não gera fluxos de entrada de caixa amplamente independentes, o valor recuperável é determinado para a unidade geradora de caixa à qual o ativo pertence;
+
+> • As perdas por redução ao valor recuperável reconhecidas em relação às unidades geradoras de caixa são alocadas primeiro para reduzir o valor contábil de qualquer ágio alocado a essa unidade geradora de caixa e, em seguida, para reduzir o valor contábil dos outros ativos na unidade de modo proporcional;
+
+> • Uma perda por redução ao valor recuperável em relação ao ágio não é revertida subsequentemente. Para outros ativos, uma perda por redução ao valor recuperável é revertida se houver uma mudança nas estimativas utilizadas para determinar o valor recuperável, mas apenas na medida em que o novo valor contábil não exceda o valor contábil que teria sido determinado, líquido de depreciação e amortização, caso não tenha sido reconhecida qualquer perda por redução ao valor recuperável.
+
+> Tendo identificado os ativos submetidos a teste de redução ao valor recuperável como sendo materiais para as demonstrações contábeis, a entidade avalia se as informações de política contábil para redução ao valor recuperável são, de fato, materiais.
+
+Como parte de sua avaliação, a entidade considera que uma redução ao valor recuperável ou uma reversão de uma redução ao valor recuperável não ocorreu nos períodos de relatório atuais ou comparativos. Consequentemente, é improvável que as informações de política contábil sobre como a entidade reconhece e aloca perdas por redução ao valor recuperável sejam materiais para seus principais usuários. Da mesma forma, como a entidade não possui ativos intangíveis ou ágio, é improvável que informações sobre sua política contábil para redução ao valor recuperável de ativos intangíveis e ágio forneçam informações materiais a seus principais usuários.
+
+No entanto, a política contábil de redução ao valor recuperável da entidade refere-se a um tema para a qual a entidade é obrigada a fazer julgamentos ou premissas significativos, conforme descrito nos itens 122 e 125 do CPC 26 – Apresentação das Demonstrações Contábeis. Dadas as circunstâncias específicas da entidade, ela conclui que se poderia razoavelmente esperar que as informações sobre seus julgamentos e premissas significativos relacionados às suas avaliações de redução ao valor recuperável influenciem as decisões dos principais usuários das demonstrações contábeis da entidade. A entidade observa que suas divulgações sobre julgamentos e premissas significativos já incluem informações sobre os julgamentos e premissas significativos utilizados em suas avaliações de redução ao valor recuperável.
+
+A entidade decide que seria improvável que os principais usuários de suas demonstrações contábeis precisem entender os requisitos de reconhecimento e mensuração do CPC 01 – Redução ao Valor Recuperável de Ativos - para entender as respectivas informações nas demonstrações contábeis.
+
+Consequentemente, a entidade conclui que a divulgação de um resumo dos requisitos do CPC 01 em uma política contábil separada para redução ao valor recuperável não forneceria informações que pudessem razoavelmente influenciar as decisões tomadas pelos principais usuários de suas demonstrações contábeis. Em vez disso, a entidade divulga informações materiais de política contábil relacionadas aos julgamentos e premissas significativos que a entidade aplicou em suas avaliações de redução ao valor recuperável em outras partes das demonstrações contábeis.
+
+Embora a entidade avalie algumas informações de política contábil para redução ao valor recuperável de ativos como imateriais, a entidade ainda avalia se outros requisitos de divulgação do CPC 01 fornecem informações materiais que devem ser divulgadas.
+
+DISPOSIÇÕES FINAIS
+
+Matli uements
+
+47. Este pronunciamento substitui a OCPC 07 – Evidenciação na Divulgação dos Relatórios Contábil-Financeiros de Propósito Geral aprovada pelo Comitê de Pronunciamentos Contábeis em 26 de setembro de 2014.
+
+RAZÕES DA EMISSÃO ORIGINAL E DESTA ATUALIZAÇÃO DA ORIENTAÇÃO SOBRE A ELABORAÇÃO DAS NOTAS EXPLICATIVAS
+
+(esta seção acompanha mas não faz parte da Orientação)
+
+IN1. O volume de informações contido no relatório financeiro para fins gerais tem provocado grandes questionamentos pelos agentes do mercado em relação à extensão do material apresentado. Muitos agentes têm notado a existência de informações irrelevantes, ao mesmo tempo em que se comentam sobre a falta de informações relevantes.
+
+IN2. A reprodução de informações muitas vezes dadas como desnecessárias estaria trazendo como consequência o aumento do custo da elaboração e da divulgação, o que também é foco de reclamações dos diversos agentes do mercado, desde os preparadores dos relatórios financeiros até os analistas, passando pelos conselheiros das companhias.
+
+IN3. A apresentação das demonstrações contábeis, segundo muitos, parece adotar a técnica de check list nas divulgações requeridas pelos Pronunciamentos, Interpretações e Orientações do Comitê de Pronunciamentos Contábeis - CPC, ou seja, simplesmente verificar se cada item está numa lista prévia de divulgações requeridas, não sendo observados, muitas vezes, os critérios de relevância. Vem sendo afirmado, inclusive, que o excesso de informações dificulta a adequada tomada de decisão por parte dos usuários das demonstrações contábeis.
+
+IN4. Pelo que se tem conhecimento, essa não é uma situação tipicamente brasileira. Tem havido forte movimento mundial no sentido de se chegar a caminhos que tragam para as demonstrações contábeis apenas as informações que realmente interessam aos usuários no sentido de orientar as suas decisões sobre uma entidade. Tanto que discussões e documentos têm surgido a respeito, como, por exemplo:
+
+• O EFRAG – European Financial Reporting Advisory Group, que recomenda à União Europeia a adoção ou não dos documentos emitidos pelo IASB (IFRSs), emitiu em 2012 o documento: Towards a Disclosure Framework for the Notes, discutindo e coletando opiniões especificamente sobre a divulgação das notas explicativas. Como conclusão, propôs a elaboração de Estrutura Conceitual específica para a apresentação dessas notas.
+
+• O ASAF – Accounting Standards Advisory Forum, do próprio IASB – International Accounting Standards Board, em sua reunião de setembro de 2013, discutiu intensamente o problema e deliberou propor ao board do IASB ações na direção de disciplinar as diretrizes gerais sobre divulgação e notas explicativas.
+
+• O IASB divulgou o documento Discussion Forum – Financial Reporting Disclosure, em maio de 2013, reportando várias manifestações de usuários, preparadores e auditores a respeito de dificuldades relativas à qualidade das notas explicativas e criou um grupo para discutir exatamente Disclosure Initiative que, em conjunto com outras melhorias necessárias com foco no conteúdo informacional das demonstrações contábeis, configurou-se numa frente de trabalho do IASB denominada de Better Communication in Financial Reporting. O projeto Better Communication in Financial Reporting é bastante abrangente e provavelmente um dos maiores projetos em curso da entidade. Ele destaca a importância e os temas comuns de vários projetos do IASB que tem como objetivo ajudar a tornar as informações financeiras mais úteis e melhorar a forma como as informações financeiras são comunicadas aos usuários das demonstrações contábeis.
+
+• O FASB, em março de 2014, numa ação concreta, emitiu, para discussão, o Proposed Statement of Financial Accounting Concepts intitulado Conceptual Framework for Financial Reporting, Chapter 8: Notes to Financial Statements (41 páginas), como estrutura conceitual para a emissão das notas explicativas. Adicionalmente, está em curso pelo FASB, um projeto denominado “Disclosure Improvements in Response to the SEC’s Release on Disclosure Update and Simplification” que tem como objetivo a revisão e melhorias nas divugações de informações financeiras em resposta a requerimentos da SEC sobre atualização e simplicação de aspectos de divulgação.
+
+IN5. Este CPC decidiu, então, em 2014, efetuar alguns levantamentos e concluiu que já existiam diretrizes sobre a evidenciação, especialmente nas notas explicativas, em diversos Pronunciamentos, Interpretações e Orientações, principalmente no Pronunciamento Técnico CPC 00 - Estrutura Conceitual para Relatório Financeiro (outra nomenclatura à época) - e no Pronunciamento Técnico CPC 26 – Apresentação das Demonstrações Contábeis, bem como na própria Lei das Sociedades por Ações (6.404/76) e em documentos de diversos órgãos reguladores.
+
+IN6. E concluiu também que havia possibilidade de emissão de algumas orientações sobre essa evidenciação.
+
+IN7. Após analisar essa situação e considerando que o IASB poderia levar demasiado tempo até que concluísse os projetos em andamento relacionados a esse tema, este Comitê – tomando por base as normatizações já existentes e cuidando para que os requerimentos existentes em cada Pronunciamento Contábil emitido por este CPC não deixassem de ser atendidos – deliberou pela emissão da versão original desta Orientação, no sentido de esclarecer e reforçar que, nas demonstrações contábeis e nas respectivas notas explicativas, fossem divulgadas informações relevantes (e apenas elas) que de fato auxiliassem os usuários.
+
+IN8. E assim nasceu a versão original desta OCPC 07 em 2014, aprovada em 26/09 daquele ano.
+
+IN 9. A partir da emissão da versão original desta Orientação tivemos novas manifestações do IASB:
+
+• Ainda, em dezembro de 2014, o IASB aprovou o documento Disclosure Iniatiative: Amendments to IAS 1, que alterou a norma de apresentação das demonstrações contábeis de sorte a deixar explícito, entre outras alterações na norma de apresentação, que as notas explicativas podem ser sistematicamente agrupadas e ordenadas dando, por exemplo, proeminência às áreas que a entidade considera mais relevantes para a compreensão de suas performance e posição financeiras, e não necessariamente por ordem de apresentação das demonstrações contábeis.
+
+• Em outubro de 2018, o IASB aprovou o documento Definition of Material: Amendments to IAS 1 and IAS 8, que alterou as normas IAS 1 (apresentação) e IAS 8 (políticas e estimativas contábeis), deixando claro que a divulgação de informações imateriais pode impossibilitar que o usuário primário das demonstrações contábeis identifique o que é e o que não é material, tendo consequentemente o mesmo efeito que existiria se uma informação material fosse omitida ou distorcida.
+
+• Em fevereiro de 2021, o IASB aprovou o documento Disclosure of Accounting Policies: Amendments to IAS 1 and IFRS Practice Statement 2, esclarecendo que somente as informações correspondentes a políticas contábeis materiais devem ser divulgadas e que essas informações devem estar focadas em revelar como a entidade aplicou as normas contábeis e não em repeti-las e/ou sumariá-las.
+
+• Outros projetos dentro da frente de Better Communication in Financial Reporting continuam em desenvolvimento na data da aprovação da emissão desta versão da OCPC 07, dentre os quais se destacam:
+
+• ED/2021/7: minuta de norma que propõe que se permitam divulgações simplificadas para entidades sem obrigação de prestação pública de contas que são controladas por entidades que adotam e divulgam suas demonstrações contábeis de acordo com as IFRS completas.
+
+• ED/2021/3: minuta de alterações nas normas IFRS 13 e IAS 19 como resultado da aplicação, na forma de projetos-piloto, de um novo guia de orientação para o próprio IASB no desenvolvimento das normas no tocante às divulgações requeridas em nota explicativa. Esse guia de orientação foi desenvovido buscando tratar os problemas de insuficiência de informações relevantes e excesso de informações irrelevantes apontados no fórum de discussão previamente mencionado e sua aplicação está sendo testada nas normas acima referidas.
+
+• Mas, como são projetos novos, alertamos os preparadores, auditores e usuários das demonstrações contábeis para a redação final quando, e se, aprovados pelo IASB.
+
+IN10. É muito interessante notar que as principais disposições contidas nesses documentos emitidos pelo IASB após a emissão da OCPC 07 já estavam contidas na versão original desta Orientação. Assim, a razão básica desta revisão se relaciona às atualizações de termos e redações na OCPC 07, em observância aos utilizados em outros documentos do CPC que foram alterados, não havendo nenhuma alteração de contéudo quanto aos requerimentos anteriormente introduzidos.
+
+[^1]: Referência a publicação feita pelo Ibracon do conjunto das Normas Internacionais de Contabilidade emitidas pelo IASB traduzida para o idioma português e autorizada pela Fundação IFRS.

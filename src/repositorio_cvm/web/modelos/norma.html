@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% from "macros.html" import selo_situacao, selo_qualidade %}
+{% set aba = 'normas' %}
+{% block titulo %}{{ doc.titulo }}{% endblock %}
+{% block estilo %}
+.grade-norma { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: start; }
+@media (max-width: 1000px) { .grade-norma { grid-template-columns: 1fr; } }
+.lateral { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow-y: auto; font-size: .88rem; }
+.lateral h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .5px; color: var(--suave); margin: 14px 0 6px; }
+.lateral h3:first-child { margin-top: 0; }
+.lateral dl { margin: 0; } .lateral dt { color: var(--suave); font-size: .78rem; margin-top: 6px; }
+.lateral dd { margin: 0; overflow-wrap: anywhere; }
+.lateral details { font-size: .78rem; color: var(--suave); }
+.lateral details summary { cursor: pointer; }
+.lateral ul { padding-left: 18px; margin: 4px 0; }
+.exportar { display: flex; flex-wrap: wrap; gap: 6px; }
+.exportar a { padding: 5px 12px; font-size: .85rem; }
+.texto { font-family: Georgia, "Times New Roman", serif; font-size: 1rem; line-height: 1.6; padding: 24px 32px; }
+@media (max-width: 700px) { .texto { padding: 14px; } }
+.texto h1, .texto h2, .texto h3, .texto h4 { font-family: "Segoe UI", system-ui, Arial, sans-serif; text-align: center; }
+.texto h1 { font-size: 1.15rem; } .texto h2 { font-size: 1.02rem; } .texto h3, .texto h4 { font-size: .95rem; }
+.texto p { margin: 0 0 .7em; text-align: justify; }
+.texto s, .texto del { color: var(--suave); }
+.texto blockquote { margin: 0 0 .7em 1.6em; padding-left: .8em; border-left: 3px solid var(--borda); }
+.texto table { border-collapse: collapse; margin: .6em 0 1em; font-size: .85rem; font-family: "Segoe UI", Arial, sans-serif; }
+.texto td, .texto th { border: 1px solid var(--borda); padding: 4px 6px; vertical-align: top; }
+.texto .lista p { margin-bottom: .45em; }
+.texto sup.nota-ref { font-size: .7em; }
+.texto ::target-text { background: var(--marca); }
+.legenda { font-size: .82rem; }
+.partes { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 10px 12px; margin-bottom: 10px; }
+.partes a { font-size: .82rem; padding: 3px 10px; border: 1px solid var(--borda); border-radius: 999px; text-decoration: none; }
+.partes a.ativa { background: var(--destaque); border-color: var(--destaque); color: var(--fundo); }
+.audiencia { margin-bottom: 10px; }
+.audiencia .meta { color: var(--suave); font-size: .8rem; }
+{% endblock %}
+{% block conteudo %}
+<p class="pequeno suave" style="margin:0 0 6px"><a href="/normas">Normas</a> · {{ especies.get(doc.linha.especie, doc.linha.especie) }}</p>
+<h1>{{ doc.titulo }}</h1>
+<p style="margin:4px 0 10px">{{ selo_situacao(doc.linha.situacao) }}
+  {% if versao %}{{ selo_qualidade(versao) }}{% endif %}
+  <span class="suave pequeno">{{ data_br(doc.linha.data_edicao) }}</span></p>
+{% if doc.linha.ementa %}<p><em>{{ doc.linha.ementa }}</em></p>{% endif %}
+<p class="aviso">{{ doc.aviso_vigencia() }}</p>
+
+{% set tipo = versao.chave if versao else 'consolidado' %}
+{% set q_parte = ('&parte=' ~ parte.chave) if parte else '' %}
+<div class="grade-norma">
+  <div>
+    {% if aviso_parte %}<p class="aviso">{{ aviso_parte }}</p>{% endif %}
+    {% if partes %}
+    <nav class="partes painel" aria-label="Partes da norma">
+      <span class="suave pequeno">Partes:</span>
+      <a href="/norma/{{ doc.id }}?versao={{ tipo }}" class="{{ 'ativa' if not parte }}">Texto completo</a>
+      {% for p in partes %}
+      <a href="/norma/{{ doc.id }}?versao={{ tipo }}&parte={{ p.chave }}" title="{{ p.titulo }}" class="{{ 'ativa' if parte and parte.chave == p.chave }}">{{ p.nome }}</a>
+      {% endfor %}
+    </nav>
+    {% if parte %}
+    <p class="legenda">Exibindo só <strong>{{ parte.titulo }}</strong> ({{ parte.dispositivos }} dispositivos).
+      {% if parte.url_oficial %}<a href="{{ parte.url_oficial }}" target="_blank" rel="noopener">PDF oficial desta parte ↗</a>{% endif %}</p>
+    {% endif %}
+    {% endif %}
+    {% if versao %}
+      {% if versao.nivel != 'alta' %}
+      <p class="aviso"><strong>Qualidade {{ versao.nivel }}:</strong> {{ versao.qualidade.split(':', 1)[1].split('; avisos:')[0] }}.
+        {% if incertos %}O texto tem {{ incertos }} caractere{{ 's' if incertos != 1 }} não identificado{{ 's' if incertos != 1 }}, marcado{{ 's' if incertos != 1 }} com □: confira esses pontos no <a href="{{ versao.url_fonte }}" target="_blank" rel="noopener">PDF oficial</a>.{% endif %}</p>
+      {% endif %}
+      {% if versao.gerada %}
+      <p class="aviso"><strong>{{ versao.nome }}.</strong> {{ versao.aviso }}</p>
+      {% elif doc.versoes|length > 1 %}
+      <p class="legenda suave"><strong>{{ versao.nome }}.</strong> {{ versao.aviso }}</p>
+      {% endif %}
+      <article class="painel texto">{{ corpo|safe }}</article>
+    {% else %}
+      <div class="painel"><p>Texto integral ainda não convertido.
+        {% if doc.linha.motivo_pendencia %}<br><span class="suave">Motivo: {{ doc.linha.motivo_pendencia }}</span>{% endif %}</p>
+        <p>Consulte a <a href="{{ doc.linha.url_oficial }}" target="_blank" rel="noopener">ficha oficial</a>.</p></div>
+    {% endif %}
+  </div>
+
+  <aside class="painel lateral">
+    {% if versao %}
+    <h3>Versão do texto</h3>
+    {% for v in doc.versoes %}
+      <div>{% if v.id == versao.id %}<strong>{{ v.nome }}</strong>{% else %}<a href="/norma/{{ doc.id }}?versao={{ v.chave }}{{ q_parte }}">{{ v.nome }}</a>{% endif %}
+        <span class="suave">· {{ 'gerada em ' ~ data_br(v.gerado_em[:10]) if v.gerada else 'coletado em ' ~ data_br(v.coletado_em[:10]) }}</span></div>
+    {% endfor %}
+    {% if alteracoes %}
+    <details {{ 'open' if alteracoes|selectattr('status', 'in', ['alvo não localizado', 'não reconhecido'])|list }}>
+      <summary>alterações aplicadas pelo sistema ({{ alteracoes|selectattr('status', 'equalto', 'aplicada')|list|length }} de {{ alteracoes|length }})</summary>
+      <ul class="pequeno">
+      {% for a in alteracoes %}
+        <li title="{{ a.comando }}"><strong>Res. {{ a.ato_id.rsplit('-', 1)[1] }}</strong> · {{ a.alvo or a.operacao }} ·
+          <span class="{{ 'suave' if a.status in ('aplicada', 'sem alteração') else '' }}">{{ a.status }}</span>
+          {% if a.vigencia %}<span class="suave">(vigência {{ data_br(a.vigencia) }})</span>{% endif %}
+          {% if a.detalhe %}<br><span class="suave">{{ a.detalhe }}</span>{% endif %}</li>
+      {% endfor %}
+      </ul>
+    </details>
+    {% endif %}
+    <details><summary>origem e conversão</summary>
+      <p>Arquivo: <a href="{{ versao.url_fonte }}" target="_blank" rel="noopener">{{ versao.url_fonte.rsplit('/', 1)[-1] }}</a><br>
+      SHA-256 {{ versao.sha256[:16] }}…<br>Conversor {{ versao.conversor }}<br>{{ versao.qualidade }}</p>
+    </details>
+    <h3>Exportar{{ ' · ' ~ parte.nome if parte }}</h3>
+    <div class="exportar">
+      {% for f, nome in [('docx', 'Word'), ('pdf', 'PDF'), ('md', 'Markdown'), ('txt', 'Texto')] %}
+      <a class="botao secundario" href="/norma/{{ doc.id }}/exportar/{{ f }}?versao={{ tipo }}{{ q_parte }}">{{ nome }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <h3>Metadados e origem</h3>
+    <dl>
+    {% for campo, rotulo, valor, evid in doc.campos() %}
+      {% if valor is not none and campo not in ('titulo', 'ementa') %}
+      <dt>{{ rotulo }}</dt>
+      <dd>{% if campo == 'url_oficial' %}<a href="{{ valor }}" target="_blank" rel="noopener">ficha oficial ↗</a>
+          {% elif campo.startswith('data') or campo == 'ultima_verificacao' %}{{ data_br(valor[:10]) }}
+          {% elif campo == 'especie' %}{{ especies.get(valor, valor) }}
+          {% else %}{{ valor }}{% endif %}
+        {% if evid and campo not in ('url_oficial',) %}
+        <details><summary>origem</summary>{% if evid.trecho %}“{{ evid.trecho|truncate(400) }}”<br>{% endif %}
+          <a href="{{ evid.url }}" target="_blank" rel="noopener">{{ evid.url.rsplit('/', 1)[-1] or evid.url }}</a>
+          · registrado em {{ data_br(evid.registrado_em[:10]) }}</details>
+        {% endif %}
+      </dd>
+      {% endif %}
+    {% endfor %}
+    </dl>
+
+    {% if doc.relacoes %}
+    <h3>Relações ({{ doc.relacoes|length }})</h3>
+    {% for tipo, grupo in doc.relacoes|groupby('rotulo_tipo') %}
+      <div><strong>{{ tipo }}</strong>
+      <ul>{% for r in grupo %}
+        <li>{% if r.alvo_no_acervo %}<a href="/norma/{{ r.alvo_no_acervo }}">{{ r.alvo_titulo }}</a>{% else %}<a href="{{ r.alvo_url }}" target="_blank" rel="noopener">{{ r.alvo_titulo }} ↗</a>{% endif %}
+          <details><summary>evidência</summary>“{{ r.trecho|truncate(300) }}”</details></li>
+      {% endfor %}</ul></div>
+    {% endfor %}
+    {% endif %}
+
+    {% if audiencias %}
+    <h3>Audiência pública</h3>
+    {% for a in audiencias %}
+    <div class="audiencia">
+      <strong><a href="/audiencia/{{ a.id }}">{{ a.codigo or a.id }}</a></strong>
+      <a href="{{ a.url }}" target="_blank" rel="noopener" title="página oficial">↗</a>
+      {% if a.status == 'lida' %}
+        {% if a.tema %}<div>{{ a.tema|truncate(240) }}</div>{% endif %}
+        <div class="meta">Fase: {{ a.fase or 'não informada' }} · Prazo: {{ data_br(a.prazo) if a.prazo else 'não informado' }}{% if a.prazos_divergem %} (o edital diz {{ data_br(a.prazo_edital) }}){% endif %}</div>
+        <ul>{% for arq in a.arquivos if arq.secao in ('edital', 'relatório') %}
+          <li>{% if arq.texto_id and arq.fidelidade_ok %}<a href="/audiencia/{{ a.id }}?texto={{ arq.texto_id }}">{{ arq.rotulo }}</a>{% else %}{{ arq.rotulo }}{% endif %}
+            <a href="{{ arq.url }}" target="_blank" rel="noopener" title="arquivo oficial">↗</a></li>
+        {% endfor %}</ul>
+      {% else %}
+        <div class="meta">Página ainda não lida{{ ': ' ~ a.detalhe if a.status == 'indisponível' and a.detalhe }}.</div>
+      {% endif %}
+      <details><summary>origem</summary>{% for o in a.origens %}{{ o.origem }}: “{{ o.trecho|truncate(200) }}”<br>{% endfor %}</details>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% if justificativas %}
+    <h3>Justificativa de dispensa de AIR</h3>
+    {% for j in justificativas %}
+    <div class="audiencia">
+      <strong>{{ j.rotulo }}</strong>
+      <a href="{{ j.url }}" target="_blank" rel="noopener" title="documento oficial">↗</a>
+      {% if j.paragrafos %}
+        <div class="meta">Texto convertido automaticamente; prevalece o original. Qualidade: {{ j.qualidade }}</div>
+        <details><summary>ler o texto</summary>{% for p in j.paragrafos %}<p>{{ p }}</p>{% endfor %}</details>
+      {% elif j.status != 'baixada' %}
+        <div class="meta">Documento ainda não obtido{{ ': ' ~ j.status if j.status != 'não baixada' }}.</div>
+      {% else %}
+        <div class="meta">Sem texto convertido ({{ j.qualidade or 'não convertido' }}); consulte o documento oficial.</div>
+      {% endif %}
+      <details><summary>origem</summary>Citada na ficha oficial: “{{ j.evidencia_trecho }}” ({{ j.evidencia_url }})</details>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% if doc.links %}
+    <h3>Arquivos oficiais</h3>
+    <ul>{% for l in doc.links %}
+      <li><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.rotulo or l.url.rsplit('/', 1)[-1] }}</a>
+        <span class="suave">{{ l.formato or '' }}{{ ' · ' ~ l.papel if l.papel }}</span></li>
+    {% endfor %}</ul>
+    {% endif %}
+
+    {% if doc.lacunas %}
+    <h3>Lacunas registradas</h3>
+    <ul>{% for l in doc.lacunas %}<li>{{ l.classificacao }}: {{ l.detalhe }}</li>{% endfor %}</ul>
+    {% endif %}
+  </aside>
+</div>
+{% endblock %}

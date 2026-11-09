@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% from "macros.html" import selo_situacao %}
+{% set aba = 'normas' %}
+{% block titulo %}Normas{% endblock %}
+{% block conteudo %}
+<h1>Normas no acervo</h1>
+<form method="get" action="/normas" class="busca" style="margin:12px 0">
+  <div class="linha pequeno">
+    <select name="especie" aria-label="Espécie" onchange="this.form.submit()">
+      <option value="">Todas as espécies</option>
+      {% for chave, nome in especies.items() %}<option value="{{ chave }}" {{ 'selected' if chave == especie }}>{{ nome }}</option>{% endfor %}
+    </select>
+    <select name="situacao" aria-label="Situação" onchange="this.form.submit()">
+      <option value="">Qualquer situação</option>
+      {% for s in situacoes %}<option {{ 'selected' if s == situacao }}>{{ s }}</option>{% endfor %}
+    </select>
+    <select name="ano" aria-label="Ano" onchange="this.form.submit()">
+      <option value="">Todos os anos</option>
+      {% for a in anos %}<option {{ 'selected' if a|string == ano }}>{{ a }}</option>{% endfor %}
+    </select>
+    <noscript><button type="submit">Filtrar</button></noscript>
+  </div>
+</form>
+<p class="suave pequeno">{{ linhas|length }} norma{{ 's' if linhas|length != 1 }}.</p>
+<div style="overflow-x:auto">
+<table class="grade">
+  <thead><tr><th>Norma</th><th>Data</th><th>Ementa</th><th>Situação</th><th>Versões do texto</th></tr></thead>
+  <tbody>
+  {% for d in linhas %}
+    <tr>
+      <td><a href="/norma/{{ d.id }}"><strong>{{ d.titulo or d.id }}</strong></a><br>
+          <span class="suave pequeno">{{ especies.get(d.especie, d.especie) }}</span></td>
+      <td style="white-space:nowrap">{{ data_br(d.data_edicao) }}</td>
+      <td class="pequeno">{{ (d.ementa or '—')|truncate(220) }}</td>
+      <td>{{ selo_situacao(d.situacao) }}</td>
+      <td class="pequeno">{% if d.versoes %}{{ d.versoes }}{% else %}<span class="suave">{{ d.status_coleta }}</span>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

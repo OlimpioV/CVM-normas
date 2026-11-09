@@ -1,0 +1,6 @@
+{% macro selo_situacao(s) -%}
+<span class="selo {{ 'vigente' if s == 'vigente' else 'alterada' if s == 'vigente com alterações' else 'futura' if s == 'vigência futura' else 'revogada' if 'revogada' in s else '' }}">{{ s }}</span>
+{%- endmacro %}
+{% macro selo_qualidade(v) -%}
+<span class="selo {{ {'alta': 'alta', 'média': 'media', 'baixa': 'baixa'}.get(v.nivel, '') }}" title="{{ v.qualidade }}">qualidade {{ v.nivel }}</span>
+{%- endmacro %}

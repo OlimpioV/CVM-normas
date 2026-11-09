@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+# Páginas e arquivos oficiais da CVM usados nos testes: comparados byte a byte, nunca convertidos.
+tests/fixtures/** binary
+*.pdf binary
+*.docx binary
+tests/fixtures/LEIAME.md text

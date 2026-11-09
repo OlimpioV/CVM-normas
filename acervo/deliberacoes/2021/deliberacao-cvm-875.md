@@ -1,0 +1,117 @@
+---
+id: "deliberacao-cvm-875"
+titulo: "Deliberação CVM 875"
+especie: "Deliberação"
+numero: "875"
+ano: 2021
+ementa: null
+data_edicao: "2021-09-30"
+data_publicacao_dou: null
+inicio_vigencia: "2022-03-15"
+fim_vigencia: null
+situacao: "vigente com alterações"
+situacao_fonte: "https://conteudo.cvm.gov.br/legislacao/deliberacoes/deli0800/deli875.html"
+situacao_verificada_em: "2026-11-06"
+ficha_oficial: "https://conteudo.cvm.gov.br/legislacao/deliberacoes/deli0800/deli875.html"
+versao: "Consolidada (texto vigente)"
+versao_aviso: "Texto vigente derivado do consolidado oficial da CVM, com a redação anterior tachada retirada e as notas de alteração mantidas."
+fonte: "https://conteudo.cvm.gov.br/legislacao/deliberacoes/anexos/0800/deli875_consolidada.docx"
+fonte_sha256: "e5e196efdbef90e2f350bf5cf9fa403eccfe49f98224f36ee60d9d22e69bd164"
+fonte_coletada_em: "2026-11-06"
+conversor: "consolidacao-limpa/1 sobre docx-ooxml/9"
+qualidade: "alta: derivada do consolidado oficial da CVM (DOCX), com a redação tachada retirada (8 bloco(s) de redação anterior e 0 trecho(s) tachado(s)); notas de alteração mantidas"
+relacoes:
+  - tipo: "alterada_por"
+    norma: "deliberacao-cvm-878"
+    evidencia: "https://conteudo.cvm.gov.br/legislacao/deliberacoes/deli0800/deli875.html"
+  - tipo: "alterada_por"
+    norma: "deliberacao-cvm-886"
+    evidencia: "https://conteudo.cvm.gov.br/legislacao/deliberacoes/deli0800/deli875.html"
+  - tipo: "alterada_por"
+    norma: "deliberacao-cvm-891"
+    evidencia: "https://conteudo.cvm.gov.br/legislacao/deliberacoes/deli0800/deli875.html"
+audiencias_publicas: []
+justificativa_air: null
+aviso_vigencia: "Situação conforme as marcações da ficha oficial da CVM consultada em 06/11/2026. Revogações feitas pelo texto de outras normas ainda não são cruzadas automaticamente; confirme a vigência na fonte oficial antes de citar."
+aviso: "Texto convertido automaticamente a partir do arquivo oficial da CVM, apenas para consulta. Em caso de divergência, prevalece o original publicado pela CVM."
+---
+
+# DELIBERAÇÃO CVM nº 875, de 30 de SETEMBRO DE 2021, com as alterações introduzidas pelaS deliberaçÕES CVM Nº 878/22, 886/23 E 891/24.
+
+Autoriza, em caráter temporário, Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. e Vórtx QR Tokenizadora Ltda. a realizarem atividades reguladas pela CVM no âmbito do Sandbox Regulatório, nos termos e condições previstos nesta Deliberação.
+
+O PRESIDENTE DA COMISSÃO DE VALORES MOBILIÁRIOS – CVM torna público que o Colegiado, em reunião realizada em 29 de setembro de 2021, com fundamento no inciso II do art. 8º da Lei nº 6.385, de 7 de setembro de 1976, e no § 1º do art. 12 da Resolução CVM nº 29, de 11 de maio de 2021, e considerando que:
+
+a) o Sandbox Regulatório é um ambiente regulatório experimental em que são concedidas autorizações temporárias para testar modelos de negócio inovadores em atividades no mercado de valores mobiliários regulamentadas pela Comissão de Valores Mobiliários;
+
+b) as autorizações temporárias são concedidas em regime diverso do ordinário, com dispensas de requisitos regulatórios específicos existentes nas regulamentações vigentes; e
+
+c) as pessoas jurídicas mencionadas nesta Deliberação enviaram proposta de participação no primeiro processo de admissão do âmbito do Sandbox Regulatório promovido pela Comissão de Valores Mobiliários e tiveram a sua proposta considerada apta;
+
+d) a proposta de participação foi objeto de recomendação de aceitação por parte do Comitê de Sandbox ao Colegiado por meio do relatório previsto no art. 9º da Resolução CVM nº 29, de 2021;
+
+DELIBEROU:
+
+I – autorizar Vórtx QR Tokenizadora S.A (“Vórtx QR Tokenizadora”) a realizar a atividade de constituição e administração de mercados organizados de valores mobiliários, nos termos da Resolução CVM nº 135, de 10 de junho de 2022, com dispensa de observância dos seguintes dispositivos: art. 16, inciso II, alíneas "a" e "b"; art. 20, incisos II a VII; art. 21, § 1º, inciso V; art. 33; art. 41, § 1º, inciso II; art. 42; art. 53, § 2º; art. 54; art. 67, incisos II, III e IV, §§ 1º e 2º; art. 71; art. 73; art. 74, § 1º; art. 80, parágrafo único; art. 83, § 1º; art. 103.
+
+*• Item I com redação dada pela Deliberação CVM nº 886, de 15 de fevereiro de 2023.*
+
+II - autorizar a Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. (“Vórtx DTVM”), instituição integrante do sistema de distribuição de valores mobiliários, a realizar, no âmbito do Sandbox Regulatório, a atividade de intermediação de ofertas públicas de valores mobiliários realizadas sob o rito da Resolução CVM nº 160, de 13 de julho de 2022, com dispensa de observância do art. 27, inciso II, alínea b; e art. 25, parágrafo segundo.
+
+*• Item II com redação dada pela Deliberação CVM nº 886, de 15 de fevereiro de 2023.*
+
+III – autorizar a Vórtx DTVM, entidade autorizada a prestar serviços de escrituração de valores mobiliários, a realizar, no âmbito do Sandbox Regulatório, a prestação de serviço de escrituração de valores mobiliários, nos termos da Resolução CVM nº 33, de 15 de maio de 2021, com dispensa de observância do art. 23;
+
+IV – dispensar a observância do art. 4º, I e II, da Resolução CVM nº 31, de 19 de maio de 2021, para as atividades realizadas pela Vórtx DTVM e pela Vórtx QR Tokenizadora no âmbito do Sandbox Regulatório;
+
+IV-A – dispensar a observância do art. 6º, III e VII, da Resolução CVM 17, de 9 de fevereiro de 2021, para as atividades realizadas pela Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. e Vórtx QR Tokenizadora Ltda. no âmbito do Sandbox Regulatório;
+
+*• Item IV-A incluído pela Deliberação CVM nº 878, de 15 de fevereiro de 2022.*
+
+V – que a realização das atividades autorizadas deve observar os seguintes limites, condições e salvaguardas:
+
+a) apenas investidores profissionais e qualificados, nos termos da Resolução CVM nº 30, de 11 de maio de 2021, poderão participar das ofertas e negociações realizadas no âmbito do Sandbox Regulatório;
+
+b) o mercado de balcão organizado deve funcionar apenas na modalidade de sistema centralizado e multilateral de negociação, nos termos do art. 92, inciso I, da Instrução CVM nº 461, de 2007;
+
+c) as ofertas públicas de valores mobiliários e as negociações em mercado organizado realizadas nos termos desta Deliberação são restritas a: (i) no máximo, 12 (doze) emissores ativos, no caso de operações envolvendo debêntures, cotas de fundos de investimento fechados e certificados de depósito e certificados de valores mobiliários que tenham como lastro tais valores mobiliários; e (ii) no máximo, 12 (doze) emissões ativas, no caso de operações envolvendo certificados de recebíveis imobiliários e certificados de recebíveis do agronegócio e certificados de depósito e certificados de valores mobiliários que tenham como lastro tais valores mobiliários.
+
+*• Alínea “c” com redação dada pela Deliberação CVM nº 886, de 15 de fevereiro de 2023.*
+
+d) as operações da Vórtx DTVM e da Vórtx QR Tokenizadora no âmbito do Sandbox Regulatório se restringem a debêntures, cotas de fundos de investimento fechados, certificados de recebíveis imobiliários e certificados de recebíveis do agronegócio, bem como certificados de depósito e certificados de valores mobiliários que tenham como lastro tais valores mobiliários;
+
+*• Alínea “d” com redação dada pela Deliberação CVM nº 886, de 15 de fevereiro de 2023.*
+
+e) a Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. deve elaborar, para cada oferta pública realizada nos termos desta Deliberação, documento com as informações essenciais da oferta e do emissor, cujo modelo deve ser aprovado nos termos do inciso IX desta Deliberação;
+
+f) os valores mobiliários ou os lastros de certificados de depósito de valores mobiliários que serão admitidos à negociação no mercado de balcão organizado autorizado por meio desta Deliberação não podem ser concomitantemente admitidos à negociação em outro mercado organizado;
+
+g) o contrato de adesão a ser subscrito pelo investidor deve conter cláusula de ressarcimento, por parte de Vórtx QR Tokenizadora e da Vórtx DTVM, para contemplar hipóteses e formas de ressarcimento em caso de prejuízos decorrentes de erros operacionais ou falhas no sistema de negociação do mercado de balcão, dentro de suas respectivas responsabilidades, cujo modelo deve ser aprovado nos termos do inciso IX desta Deliberação;
+
+h) não podem integrar a diretoria colegiada empregados ou prepostos da entidade administradora que exerçam qualquer outra função na entidade, exceto pelo diretor do departamento de compliance, autorregulacão e supervisão de mercados; e
+
+i) a Vórtx QR Tokenizadora deve cumprir imediatamente sanções impostas por resoluções sancionatórias do Conselho de Segurança das Nações Unidas, nos termos dos arts. 27 e 28 da Resolução CVM nº 50, de 2021, mesmo durante o período em que a política de prevenção à lavagem de dinheiro, ao financiamento do terrorismo e ao financiamento da proliferação de armas de destruição em massa esteja em fase de elaboração e implementação;
+
+j) as ofertas públicas realizadas nos termos desta Deliberação de emissores não registrados na CVM apenas podem ser destinadas a investidores profissionais e qualificados.
+
+*• Alínea “j” incluída pela Deliberação CVM nº 886, de 15 de fevereiro de 2023.*
+
+VI – fica o Comitê de Sandbox autorizado a aprovar, após manifestação prévia das áreas técnicas afetas à matéria, todos os documentos sujeitos à apresentação, nos termos da proposta, como condição para o início do exercício das atividades autorizadas à luz da regulamentação aplicável;
+
+*• Item VII com redação dada pela Deliberação CVM nº 878, de 15 de fevereiro de 2022.*
+
+*• Item VII com redação dada pela Deliberação CVM nº 886, de 15 de fevereiro de 2023.*
+
+VII - que as autorizações temporárias e dispensas previstas nesta Deliberação são válidas até 14 de março de 2026.
+
+*• Item VII com redação dada pela Deliberação CVM nº 891, de 6 de março de 2024.*
+
+VIII – que esta Deliberação entra em vigor em 15 de março de 2022.
+
+*• Item VIII com redação dada pela Deliberação CVM nº 878, de 15 de fevereiro de 2022.*
+
+Assinado eletronicamente por
+
+MARCELO BARBOSA
+
+Presidente

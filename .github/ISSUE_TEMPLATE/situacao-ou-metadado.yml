@@ -1,0 +1,24 @@
+name: Situação normativa ou metadado incorreto
+description: Situação (vigente, revogada...), data, ementa ou relação incorreta
+labels: ["metadados"]
+body:
+  - type: input
+    id: ato
+    attributes:
+      label: Ato
+      placeholder: resolucao-cvm-175
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: O que está incorreto
+    validations:
+      required: true
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidência
+      description: Link da fonte oficial (ficha da CVM, DOU, norma revogadora) que mostra o valor correto.
+    validations:
+      required: true

@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% set aba = 'relatorios' %}
+{% block titulo %}Cobertura{% endblock %}
+{% block estilo %}
+.barra { background: var(--neutro-fundo); border-radius: 4px; height: 8px; min-width: 80px; overflow: hidden; }
+.barra span { display: block; height: 100%; background: var(--destaque); }
+.numeros { display: flex; gap: 28px; flex-wrap: wrap; }
+.numeros div strong { display: block; font-size: 1.6rem; line-height: 1.2; }
+details.ausentes summary { cursor: pointer; }
+{% endblock %}
+{% block conteudo %}
+{% set t = dados.totais %}
+<h1>Cobertura do acervo em relação à CVM</h1>
+<p class="suave pequeno">Referência: a pesquisa de legislação do portal da CVM (conteudo.cvm.gov.br), lida página a
+  página por <code>ler-catalogo</code>. A data de cada ato é a exibida no catálogo (data de edição).</p>
+{% if dados.aviso %}<p class="aviso">{{ dados.aviso }}</p>{% endif %}
+
+<div class="painel numeros">
+  <div><strong>{{ t.catalogo }}</strong><span class="suave pequeno">atos no catálogo da CVM</span></div>
+  <div><strong>{{ t.no_acervo }}</strong><span class="suave pequeno">no acervo{% if t.pct is not none %} ({{ t.pct }}%){% endif %}</span></div>
+  <div><strong>{{ t.catalogo - t.no_acervo }}</strong><span class="suave pequeno">faltam no acervo</span></div>
+  <div><strong>{{ t.com_texto }}</strong><span class="suave pequeno">com texto integral aprovado</span></div>
+</div>
+
+<h2>Por espécie</h2>
+<div style="overflow-x:auto">
+<table class="grade">
+  <thead><tr><th>Espécie</th><th class="num">No catálogo</th><th class="num">No acervo</th><th>Cobertura</th>
+    <th class="num">Faltam</th><th class="num">Com texto</th><th>Leitura do catálogo</th></tr></thead>
+  <tbody>
+  {% for f in dados.familias %}
+    <tr>
+      <td><strong>{{ especies.get(f.familia, f.familia) }}</strong></td>
+      <td class="num">{{ f.catalogo if f.leitura else '—' }}</td>
+      <td class="num">{{ f.no_acervo }}</td>
+      <td>{% if f.pct is not none %}<div class="barra" title="{{ f.pct }}%"><span style="width: {{ f.pct }}%"></span></div>
+          <span class="pequeno">{{ f.pct }}%</span>{% else %}—{% endif %}</td>
+      <td class="num">{% if f.leitura %}<a href="/relatorios/faltantes?familia={{ f.familia }}">{{ f.catalogo - f.no_acervo }}</a>{% else %}—{% endif %}</td>
+      <td class="num">{{ f.com_texto }}</td>
+      <td class="pequeno">{% if f.leitura %}{% set l = f.leitura %}
+        <span class="selo {{ 'alta' if l.status == 'completa' else 'media' if l.status == 'divergente na fonte' else 'baixa' }}">{{ l.status }}</span>
+        {{ data_br(l.terminada_em[:10]) }} · {{ l.total_lido }} de {{ l.total_informado if l.total_informado is not none else '?' }} informados
+        {% if l.observacao %}<br><span class="suave">{{ l.observacao }}</span>{% endif %}
+        {% else %}<span class="suave">não lido</span>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+{% set numeradas = dados.familias|selectattr('maior_numero')|list %}
+{% if numeradas %}
+<h2>Números ausentes do catálogo</h2>
+<p class="suave pequeno">Números entre 1 e o maior número listado que não aparecem no catálogo oficial. Ficam como
+  "não localizado": a ausência no catálogo não prova que o ato não exista.</p>
+<ul>
+{% for f in numeradas %}
+  <li><strong>{{ especies.get(f.familia, f.familia) }}</strong> (até nº {{ f.maior_numero }}):
+    {% if f.qtd_numeros_ausentes %}
+    <details class="ausentes" style="display:inline"><summary>{{ f.qtd_numeros_ausentes }} número{{ 's' if f.qtd_numeros_ausentes != 1 }} ausente{{ 's' if f.qtd_numeros_ausentes != 1 }}</summary>
+      <span class="pequeno">{{ f.numeros_ausentes }}</span></details>
+    {% else %}nenhum número ausente{% endif %}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if dados.linhas %}
+<h2>Por espécie e ano</h2>
+<div style="overflow-x:auto">
+<table class="grade">
+  <thead><tr><th>Espécie</th><th>Ano</th><th class="num">No catálogo</th><th class="num">No acervo</th><th>Cobertura</th>
+    <th class="num">Faltam</th><th class="num">Com texto</th></tr></thead>
+  <tbody>
+  {% for l in dados.linhas %}
+    <tr><td>{{ especies.get(l.familia, l.familia) }}</td><td>{{ l.ano }}</td>
+      <td class="num">{{ l.catalogo }}</td><td class="num">{{ l.no_acervo }}</td>
+      <td>{% if l.pct is not none %}<div class="barra" title="{{ l.pct }}%"><span style="width: {{ l.pct }}%"></span></div>{% endif %}</td>
+      <td class="num">{% if l.catalogo - l.no_acervo %}<a href="/relatorios/faltantes?familia={{ l.familia }}&ano={{ l.ano }}">{{ l.catalogo - l.no_acervo }}</a>{% else %}0{% endif %}</td>
+      <td class="num">{{ l.com_texto }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endif %}
+
+{% set fora = dados.familias|selectattr('leitura')|selectattr('fora_do_catalogo')|list %}
+{% if fora %}
+<h2>No acervo, mas fora da última leitura do catálogo</h2>
+<ul>{% for f in fora %}{% for d in f.fora_do_catalogo %}<li><a href="/norma/{{ d.id }}">{{ d.titulo or d.id }}</a></li>{% endfor %}{% endfor %}</ul>
+{% endif %}
+
+<h2>Situação do acervo local</h2>
+<p>{{ dados.acervo.documentos }} normas no acervo; {{ dados.acervo.com_texto }} com texto integral aprovado
+  (qualidade alta {{ dados.acervo.qualidade['alta'] }}, média {{ dados.acervo.qualidade['média'] }},
+  baixa {{ dados.acervo.qualidade['baixa'] }}). Pendências: {{ dados.pendentes|length }}. Lacunas registradas: {{ dados.lacunas|length }}.</p>
+{% if dados.pendentes %}<ul>{% for p in dados.pendentes %}<li><a href="/norma/{{ p.id }}">{{ p.titulo or p.id }}</a>: {{ p.motivo_pendencia or 'sem motivo registrado' }}</li>{% endfor %}</ul>{% endif %}
+{% if dados.lacunas %}
+<table class="grade"><thead><tr><th>Chave</th><th>Classificação</th><th>Detalhe</th><th>Fontes consultadas</th></tr></thead>
+<tbody>{% for l in dados.lacunas %}<tr><td>{{ l.chave }}</td><td>{{ l.classificacao }}</td><td>{{ l.detalhe }}</td><td class="pequeno">{{ l.fontes_consultadas or '' }}</td></tr>{% endfor %}</tbody></table>
+{% endif %}
+
+<h2>Execuções de coleta, leitura e atualização</h2>
+<div style="overflow-x:auto">
+<table class="grade">
+  <thead><tr><th class="num">#</th><th>Escopo</th><th>Início (UTC)</th><th>Fim (UTC)</th><th>Status</th><th>Resumo</th></tr></thead>
+  <tbody>{% for c in dados.coletas %}
+    <tr><td class="num">{{ c.id }}</td><td>{{ c.escopo }}</td><td class="pequeno">{{ c.iniciada_em }}</td>
+      <td class="pequeno">{{ c.terminada_em or '—' }}</td><td>{{ c.status }}</td>
+      <td class="pequeno">{{ (c.resumo or '')|truncate(260) }}</td></tr>
+  {% endfor %}</tbody>
+</table>
+</div>
+<p class="suave pequeno">Requisições registradas:
+  {% for k, v in dados.tentativas|dictsort %}{{ k }} {{ v }}{{ ', ' if not loop.last }}{% else %}nenhuma{% endfor %}.</p>
+{% endblock %}

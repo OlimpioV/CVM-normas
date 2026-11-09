@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% set aba = 'normas' %}
+{% block titulo %}Audiência Pública {{ aud.codigo or aud.id }}{% endblock %}
+{% block estilo %}
+.grade-norma { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: start; }
+@media (max-width: 1000px) { .grade-norma { grid-template-columns: 1fr; } }
+.lateral { font-size: .88rem; }
+.lateral h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .5px; color: var(--suave); margin: 14px 0 6px; }
+.lateral h3:first-child { margin-top: 0; }
+.lateral ul { padding-left: 18px; margin: 4px 0; }
+.lateral details { font-size: .78rem; color: var(--suave); }
+.texto { font-family: Georgia, "Times New Roman", serif; font-size: 1rem; line-height: 1.6; padding: 24px 32px; }
+@media (max-width: 700px) { .texto { padding: 14px; } }
+.texto p { margin: 0 0 .7em; text-align: justify; }
+.texto p:target { background: var(--marca); }
+{% endblock %}
+{% block conteudo %}
+<p class="pequeno suave" style="margin:0 0 6px"><a href="/normas">Normas</a> · Audiência pública</p>
+<h1>{{ aud.titulo or ('Audiência Pública ' ~ (aud.codigo or aud.id)) }}</h1>
+{% if aud.tema %}<p><em>{{ aud.tema }}</em></p>{% endif %}
+{% if aud.status != 'lida' %}<p class="aviso">Página oficial ainda não lida{{ ': ' ~ aud.detalhe if aud.status == 'indisponível' and aud.detalhe }}.</p>{% endif %}
+
+<div class="grade-norma">
+  <div>
+    {% if escolhido %}
+      <p class="legenda suave">{{ escolhido.rotulo }} — {{ escolhido.qualidade }}.
+        Em caso de divergência, prevalece o <a href="{{ escolhido.url }}" target="_blank" rel="noopener">arquivo oficial</a>.</p>
+      <article class="painel texto">
+      {% for p in paragrafos %}<p id="p{{ loop.index }}">{{ p }}</p>{% endfor %}
+      </article>
+    {% else %}
+      <div class="painel">
+        <p>Escolha um arquivo para ler o texto convertido:</p>
+        <ul>{% for arq in aud.arquivos if arq.texto_id and arq.fidelidade_ok %}
+          <li><a href="/audiencia/{{ aud.id }}?texto={{ arq.texto_id }}">{{ arq.rotulo }}</a> <span class="suave">({{ arq.secao }})</span></li>
+        {% else %}<li class="suave">Nenhum texto convertido.</li>{% endfor %}</ul>
+      </div>
+    {% endif %}
+  </div>
+
+  <aside class="painel lateral">
+    <h3>Dados da página oficial</h3>
+    <p><a href="{{ aud.url }}" target="_blank" rel="noopener">página da audiência ↗</a><br>
+      Fase: {{ aud.fase or 'não informada' }}<br>
+      Prazo (página): {{ aud.prazo_texto or 'não informado' }}<br>
+      {% if aud.prazo_edital_texto %}Prazo (edital): “{{ aud.prazo_edital_texto }}”<br>{% endif %}
+      {% if aud.prazos_divergem %}<span class="suave">As datas diferem; a página pode exibir o prazo prorrogado ou com o fuso do servidor. Confira o edital e os avisos.</span><br>{% endif %}
+      {% if aud.lida_em %}<span class="suave">Lida em {{ data_br(aud.lida_em[:10]) }} · SHA-256 {{ (aud.pagina_sha256 or '')[:16] }}…</span>{% endif %}</p>
+
+    {% for secao, grupo in aud.arquivos|groupby('secao') %}
+    <h3>{{ secao }}</h3>
+    <ul>{% for arq in grupo %}
+      <li>{% if arq.texto_id and arq.fidelidade_ok %}<a href="/audiencia/{{ aud.id }}?texto={{ arq.texto_id }}">{{ arq.rotulo }}</a>{% else %}{{ arq.rotulo }}{% endif %}
+        <a href="{{ arq.url }}" target="_blank" rel="noopener" title="arquivo oficial">↗</a>
+        {% if arq.texto_id and not arq.fidelidade_ok %}<span class="suave">· texto não aproveitável: {{ arq.qualidade }}</span>{% endif %}</li>
+    {% endfor %}</ul>
+    {% endfor %}
+    <p class="suave pequeno">As manifestações recebidas não são coletadas; consulte a página oficial.</p>
+
+    {% if aud.normas %}
+    <h3>Normas do acervo</h3>
+    <ul>{% for doc_id, grupo in aud.normas|groupby('documento_id') %}
+      <li><a href="/norma/{{ doc_id }}">{{ grupo[0].titulo or doc_id }}</a>
+        <details><summary>origem</summary>{% for n in grupo %}{{ n.origem }}: “{{ n.trecho|truncate(200) }}”<br>{% endfor %}</details></li>
+    {% endfor %}</ul>
+    {% endif %}
+  </aside>
+</div>
+{% endblock %}

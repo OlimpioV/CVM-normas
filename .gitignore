@@ -1,0 +1,27 @@
+# Dados do acervo (originais, convertidos, banco, logs): nunca versionar
+dados/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Modelos de OCR baixados (ver README)
+ferramentas/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Configuração local
+config.local.toml
+.claude/settings.local.json
+
+# Arquivos exportados pelo usuario
+exportados/
+
+# Pacotes gerados
+build/
+dist/

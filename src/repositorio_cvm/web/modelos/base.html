@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block titulo %}Repositório Normativo CVM{% endblock %}</title>
+<style>
+:root {
+  --fundo: #f6f7f9; --papel: #ffffff; --texto: #1d2330; --suave: #5b6475; --borda: #dde1e8;
+  --destaque: #1f4e8c; --destaque-claro: #e8eef8; --marca: #fff1a8;
+  --ok: #1e7a46; --ok-fundo: #e5f4ec; --alerta: #8a5a00; --alerta-fundo: #fdf3dc;
+  --erro: #a32020; --erro-fundo: #fbe7e7; --neutro-fundo: #eef0f4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #14171d; --papel: #1c2028; --texto: #e3e6ec; --suave: #9aa3b2; --borda: #303643;
+    --destaque: #8db4ef; --destaque-claro: #22304a; --marca: #5c4f00;
+    --ok: #7dd3a3; --ok-fundo: #173326; --alerta: #f0c46b; --alerta-fundo: #3a2e12;
+    --erro: #f19a9a; --erro-fundo: #3d1c1c; --neutro-fundo: #262b35;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--texto);
+       font: 15px/1.55 "Segoe UI", system-ui, -apple-system, Arial, sans-serif; }
+a { color: var(--destaque); }
+header.topo { background: var(--papel); border-bottom: 1px solid var(--borda); }
+header.topo .faixa { max-width: 1280px; margin: 0 auto; padding: 10px 20px; display: flex; gap: 24px;
+                     align-items: center; flex-wrap: wrap; }
+header.topo .marca { font-weight: 700; text-decoration: none; color: var(--texto); letter-spacing: .2px; }
+header.topo .marca small { color: var(--suave); font-weight: 400; }
+header.topo nav a { margin-right: 16px; text-decoration: none; color: var(--suave); }
+header.topo nav a.ativo, header.topo nav a:hover { color: var(--destaque); }
+main { max-width: 1280px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 1.45rem; margin: 0 0 6px; line-height: 1.3; }
+h2 { font-size: 1.1rem; margin: 22px 0 8px; }
+.painel { background: var(--papel); border: 1px solid var(--borda); border-radius: 8px; padding: 16px 18px; }
+.suave { color: var(--suave); }
+.pequeno { font-size: .85rem; }
+form.busca { display: grid; gap: 10px; }
+form.busca .linha { display: flex; gap: 8px; flex-wrap: wrap; }
+input, select, button { font: inherit; color: inherit; }
+input[type=search], input[type=text], input[type=date], select {
+  background: var(--papel); border: 1px solid var(--borda); border-radius: 6px; padding: 8px 10px; }
+input[type=search] { flex: 1 1 420px; font-size: 1.05rem; }
+button, .botao { background: var(--destaque); color: #fff; border: 0; border-radius: 6px; padding: 8px 16px;
+                 cursor: pointer; text-decoration: none; display: inline-block; }
+@media (prefers-color-scheme: dark) { button, .botao { color: #10151f; } }
+.botao.secundario { background: var(--neutro-fundo); color: var(--texto); border: 1px solid var(--borda); }
+.selo { display: inline-block; padding: 1px 9px; border-radius: 999px; font-size: .8rem; white-space: nowrap;
+        background: var(--neutro-fundo); color: var(--suave); }
+.selo.vigente, .selo.alta { background: var(--ok-fundo); color: var(--ok); }
+.selo.alterada, .selo.futura, .selo.media { background: var(--alerta-fundo); color: var(--alerta); }
+.selo.revogada, .selo.baixa { background: var(--erro-fundo); color: var(--erro); }
+.aviso { border-left: 4px solid var(--alerta); background: var(--alerta-fundo); padding: 10px 14px;
+         border-radius: 4px; margin: 10px 0; }
+.aviso.info { border-color: var(--destaque); background: var(--destaque-claro); }
+table.grade { width: 100%; border-collapse: collapse; background: var(--papel); }
+table.grade th, table.grade td { border-bottom: 1px solid var(--borda); padding: 7px 8px; text-align: left;
+                                 vertical-align: top; }
+table.grade th { font-size: .82rem; color: var(--suave); font-weight: 600; }
+table.grade td.num, table.grade th.num { text-align: right; font-variant-numeric: tabular-nums; }
+mark { background: var(--marca); color: inherit; padding: 0 1px; }
+.resultado { padding: 12px 0; border-bottom: 1px solid var(--borda); }
+.resultado:last-child { border-bottom: 0; }
+.resultado .cabeca { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.resultado .rotulo { font-weight: 600; }
+footer { max-width: 1280px; margin: 0 auto; padding: 10px 20px 30px; color: var(--suave); font-size: .8rem; }
+@media (max-width: 700px) { main { padding: 12px; } }
+{% block estilo %}{% endblock %}
+</style>
+</head>
+<body>
+<header class="topo"><div class="faixa">
+  <a class="marca" href="/">Repositório Normativo CVM <small>· local</small></a>
+  <nav>
+    <a href="/" class="{{ 'ativo' if aba == 'pesquisa' }}">Pesquisa</a>
+    <a href="/normas" class="{{ 'ativo' if aba == 'normas' }}">Normas</a>
+    <a href="/relatorios" class="{{ 'ativo' if aba == 'relatorios' }}">Relatórios</a>
+  </nav>
+</div></header>
+<main>{% block conteudo %}{% endblock %}</main>
+<footer>Textos convertidos automaticamente das fontes oficiais da CVM. Em caso de divergência, prevalece o original
+publicado pela CVM. Situação normativa: conforme as marcações das fichas oficiais; confirme antes de citar.</footer>
+</body>
+</html>

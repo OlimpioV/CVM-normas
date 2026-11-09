@@ -1,0 +1,43 @@
+Avisos de licença do Repositório Normativo CVM
+==============================================
+
+Este projeto tem duas licenças: uma para o código e outra para o acervo.
+Os textos integrais estão em LICENSE (GNU AGPL v3) e LICENSE-ACERVO (CC BY 4.0).
+
+1. CÓDIGO (LICENSE)
+-------------------
+
+Copyright (C) 2026 OlimpioV <https://github.com/OlimpioV/CVM-normas>
+
+Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo sob os termos da
+GNU Affero General Public License, versão 3, publicada pela Free Software Foundation, com o
+termo adicional abaixo. Este programa é distribuído na esperança de que seja útil, mas SEM
+NENHUMA GARANTIA, nem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A UM
+PROPÓSITO ESPECÍFICO. Veja a licença completa em LICENSE.
+
+ESCOPO: esta licença cobre o código-fonte (src/, tests/, scripts/ e arquivos de configuração).
+O acervo em acervo/ tem licença própria (LICENSE-ACERVO). Os textos dos atos normativos são
+atos oficiais, sem proteção autoral (Lei nº 9.610/1998, art. 8º, IV).
+
+TERMO ADICIONAL (seção 7, alínea "b", da GNU AGPL v3): toda cópia ou versão modificada deste
+programa, no todo ou em parte, deve preservar o arquivo CREDITOS.md, ou aviso equivalente
+exibido de forma razoável, com a atribuição de autoria ao Repositório Normativo CVM
+(https://github.com/OlimpioV/CVM-normas) e o reconhecimento ao projeto que o inspirou
+(https://github.com/ctresb/leis).
+
+2. ACERVO (LICENSE-ACERVO)
+--------------------------
+
+Copyright (C) 2026 OlimpioV <https://github.com/OlimpioV/CVM-normas>
+
+O QUE ESTA LICENÇA COBRE: a seleção, a organização, os cabeçalhos de metadados, os registros de
+origem (URL, SHA-256, data da coleta), as relações entre normas, os índices, os relatórios de
+cobertura e as consolidações geradas automaticamente. Licenciados sob Creative Commons
+Atribuição 4.0 Internacional (CC BY 4.0), cujo texto integral está em LICENSE-ACERVO.
+
+O QUE NÃO COBRE: o texto dos atos normativos da CVM. Atos oficiais não são objeto de proteção
+autoral (Lei nº 9.610/1998, art. 8º, IV) e podem ser usados livremente.
+
+COMO DAR O CRÉDITO (exigido pela CC BY 4.0 ao reutilizar o acervo):
+    Fonte: Repositório Normativo CVM (https://github.com/OlimpioV/CVM-normas), CC BY 4.0.
+Indique também se houve modificações. Veja CREDITOS.md.

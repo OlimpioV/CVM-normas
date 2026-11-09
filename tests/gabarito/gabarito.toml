@@ -1,0 +1,232 @@
+# Gabarito de validação: 32 atos de referência, definidos em 27/10/2026.
+#
+# `descricao_usuario` é a descrição informada ao definir o gabarito e serve apenas para conferência:
+# o sistema NÃO usa essas datas ou ementas como metadado; tudo é extraído das fontes oficiais
+# e as divergências aparecem no relatório de conferência.
+#
+# `ficha` é um atalho para a página oficial do ato (padrão de URL conferido no portal da CVM).
+# Sem `ficha`, o ato é localizado pela pesquisa paginada da categoria (`localizar`).
+
+# ---------------------------------------------------------------- Resoluções
+[[ato]]
+chave = "resolucao-cvm-175"
+especie = "resolucao"
+numero = "175"
+descricao_usuario = "Resolução CVM nº 175, de 23 de dezembro de 2022 — fundos de investimento"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol175.html"
+
+[[ato]]
+chave = "resolucao-cvm-247"
+especie = "resolucao"
+numero = "247"
+descricao_usuario = "Resolução CVM nº 247, de 2 de outubro de 2026 — alterações nas Resoluções 60 e 175"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol247.html"
+
+[[ato]]
+chave = "resolucao-cvm-160"
+especie = "resolucao"
+numero = "160"
+descricao_usuario = "Resolução CVM nº 160, de 13 de julho de 2022 — ofertas públicas"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol160.html"
+
+[[ato]]
+chave = "resolucao-cvm-161"
+especie = "resolucao"
+numero = "161"
+descricao_usuario = "Resolução CVM nº 161, de 13 de julho de 2022 — coordenadores de ofertas públicas"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol161.html"
+
+[[ato]]
+chave = "resolucao-cvm-50"
+especie = "resolucao"
+numero = "50"
+descricao_usuario = "Resolução CVM nº 50, de 31 de agosto de 2021 — PLD/FTP"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol050.html"
+
+[[ato]]
+chave = "resolucao-cvm-245"
+especie = "resolucao"
+numero = "245"
+descricao_usuario = "Resolução CVM nº 245, de 1º de julho de 2026 — alteração da Resolução 50"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol245.html"
+
+[[ato]]
+chave = "resolucao-cvm-21"
+especie = "resolucao"
+numero = "21"
+descricao_usuario = "Resolução CVM nº 21, de 25 de fevereiro de 2021 — administração de carteiras"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol021.html"
+
+[[ato]]
+chave = "resolucao-cvm-35"
+especie = "resolucao"
+numero = "35"
+descricao_usuario = "Resolução CVM nº 35, de 26 de maio de 2021 — intermediação de operações"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol035.html"
+
+[[ato]]
+chave = "resolucao-cvm-178"
+especie = "resolucao"
+numero = "178"
+descricao_usuario = "Resolução CVM nº 178, de 14 de fevereiro de 2023 — assessores de investimento"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol178.html"
+
+[[ato]]
+chave = "resolucao-cvm-179"
+especie = "resolucao"
+numero = "179"
+descricao_usuario = "Resolução CVM nº 179, de 14 de fevereiro de 2023 — alterações sobre intermediação e assessores"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol179.html"
+
+[[ato]]
+chave = "resolucao-cvm-30"
+especie = "resolucao"
+numero = "30"
+descricao_usuario = "Resolução CVM nº 30, de 11 de maio de 2021 — adequação de produtos ao perfil do cliente"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol030.html"
+
+[[ato]]
+chave = "resolucao-cvm-31"
+especie = "resolucao"
+numero = "31"
+descricao_usuario = "Resolução CVM nº 31, de 19 de maio de 2021 — depósito centralizado"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol031.html"
+
+[[ato]]
+chave = "resolucao-cvm-32"
+especie = "resolucao"
+numero = "32"
+descricao_usuario = "Resolução CVM nº 32, de 19 de maio de 2021 — custódia de valores mobiliários"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol032.html"
+
+[[ato]]
+chave = "resolucao-cvm-33"
+especie = "resolucao"
+numero = "33"
+descricao_usuario = "Resolução CVM nº 33, de 19 de maio de 2021 — escrituração de valores mobiliários"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol033.html"
+
+[[ato]]
+chave = "resolucao-cvm-60"
+especie = "resolucao"
+numero = "60"
+descricao_usuario = "Resolução CVM nº 60, de 23 de dezembro de 2021 — companhias securitizadoras"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol060.html"
+
+[[ato]]
+chave = "resolucao-cvm-9"
+especie = "resolucao"
+numero = "9"
+descricao_usuario = "Resolução CVM nº 9, de 27 de outubro de 2020 — classificação de risco de crédito"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol009.html"
+
+[[ato]]
+chave = "resolucao-cvm-17"
+especie = "resolucao"
+numero = "17"
+descricao_usuario = "Resolução CVM nº 17, de 9 de fevereiro de 2021 — agente fiduciário"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol017.html"
+
+[[ato]]
+chave = "resolucao-cvm-80"
+especie = "resolucao"
+numero = "80"
+descricao_usuario = "Resolução CVM nº 80, de 29 de março de 2022 — registro e informações de emissores"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol080.html"
+
+[[ato]]
+chave = "resolucao-cvm-44"
+especie = "resolucao"
+numero = "44"
+descricao_usuario = "Resolução CVM nº 44, de 23 de agosto de 2021 — fatos relevantes e negociação de valores mobiliários"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol044.html"
+
+[[ato]]
+chave = "resolucao-cvm-62"
+especie = "resolucao"
+numero = "62"
+descricao_usuario = "Resolução CVM nº 62, de 19 de janeiro de 2022 — manipulação e práticas não equitativas"
+ficha = "https://conteudo.cvm.gov.br/legislacao/resolucoes/resol062.html"
+
+# ---------------------------------------------------------------- Outros atos
+[[ato]]
+chave = "deliberacao-cvm-906"
+especie = "deliberacao"
+numero = "906"
+descricao_usuario = "Deliberação CVM nº 906, de 11 de março de 2026 — regras especiais para fundos Eco Invest"
+ficha = "https://conteudo.cvm.gov.br/legislacao/deliberacoes/deli0900/deli906.html"
+
+[[ato]]
+chave = "parecer-orientacao-cvm-32"
+especie = "parecer_orientacao"
+numero = "32"
+descricao_usuario = "Parecer de Orientação CVM nº 32, de 30 de setembro de 2005 — ofertas e intermediação pela internet"
+ficha = "https://conteudo.cvm.gov.br/legislacao/pareceres-orientacao/pare032.html"
+
+[[ato]]
+chave = "parecer-orientacao-cvm-33"
+especie = "parecer_orientacao"
+numero = "33"
+descricao_usuario = "Parecer de Orientação CVM nº 33, de 30 de setembro de 2005 — ofertas no Brasil de valores mobiliários emitidos em outras jurisdições"
+ficha = "https://conteudo.cvm.gov.br/legislacao/pareceres-orientacao/pare033.html"
+
+[[ato]]
+chave = "parecer-orientacao-cvm-35"
+especie = "parecer_orientacao"
+numero = "35"
+descricao_usuario = "Parecer de Orientação CVM nº 35, de 1º de setembro de 2008 — deveres fiduciários em operações entre controladora e controladas"
+ficha = "https://conteudo.cvm.gov.br/legislacao/pareceres-orientacao/pare035.html"
+
+[[ato]]
+chave = "oficio-circular-cvm-sin-01-2026"
+especie = "oficio_circular"
+numero = "1"
+descricao_usuario = "Ofício Circular CVM/SIN nº 01/2026 — interpretação do Anexo I da Resolução 175 para FIFs"
+localizar = { areas = ["SIN"], ano = 2026 }
+
+[[ato]]
+chave = "oficio-circular-cvm-sse-03-2026"
+especie = "oficio_circular"
+numero = "3"
+descricao_usuario = "Ofício Circular CVM/SSE nº 03/2026 — taxa de performance de FIDC e remuneração de consultoria"
+localizar = { areas = ["SSE"], ano = 2026 }
+
+[[ato]]
+chave = "oficio-circular-cvm-sse-02-2026"
+especie = "oficio_circular"
+numero = "2"
+descricao_usuario = "Ofício Circular CVM/SSE nº 02/2026 — CRIs no informe trimestral de FII"
+localizar = { areas = ["SSE"], ano = 2026 }
+
+[[ato]]
+chave = "oficio-circular-cvm-sse-08-2025"
+especie = "oficio_circular"
+numero = "8"
+descricao_usuario = "Ofício Circular CVM/SSE nº 08/2025 — interpretação dos Anexos II, III e VI da Resolução 175"
+localizar = { areas = ["SSE"], ano = 2025 }
+
+[[ato]]
+chave = "oficio-circular-conjunto-cvm-sin-sse-01-2025"
+especie = "oficio_circular"
+numero = "1"
+descricao_usuario = "Ofício Circular Conjunto CVM/SIN/SSE nº 01/2025 — interpretação da Parte Geral e dos Anexos I a V da Resolução 175"
+localizar = { areas = ["SIN", "SSE"], ano = 2025 }
+
+[[ato]]
+chave = "oficio-circular-cvm-sre-05-2026"
+especie = "oficio_circular"
+numero = "5"
+descricao_usuario = "Ofício Circular CVM/SRE nº 05/2026 — requerimentos de registro como coordenador de ofertas"
+localizar = { areas = ["SRE"], ano = 2026 }
+
+[[ato]]
+chave = "oficio-circular-anual-cvm-sre-2026"
+especie = "oficio_circular"
+descricao_usuario = "Ofício Circular Anual CVM/SRE 2026 — orientações para ofertas públicas"
+localizar = { areas = ["SRE"], ano = 2026, anual = true }
+
+[[ato]]
+chave = "nota-explicativa-resolucao-cvm-50"
+especie = "nota_explicativa"
+descricao_usuario = "Nota Explicativa à Resolução CVM nº 50 — PLD/FTP"
+ficha = "https://conteudo.cvm.gov.br/legislacao/notas-explicativas/nota_resol050.html"

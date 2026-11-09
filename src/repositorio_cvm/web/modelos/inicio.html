@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% from "macros.html" import selo_situacao %}
+{% set aba = 'pesquisa' %}
+{% block titulo %}{{ q ~ ' · ' if q }}Pesquisa{% endblock %}
+{% block conteudo %}
+<div class="painel">
+  <form class="busca" method="get" action="/">
+    <div class="linha">
+      <input type="search" name="q" value="{{ q }}" autofocus
+             placeholder='Ex.: Resolução CVM 175, artigo 40 · Res 175 Anexo Normativo I art 40 · "taxa de performance"'>
+      <button type="submit">Pesquisar</button>
+    </div>
+    <div class="linha pequeno">
+      <select name="especie" aria-label="Espécie">
+        <option value="">Todas as espécies</option>
+        {% for chave, nome in especies.items() %}<option value="{{ chave }}" {{ 'selected' if chave == especie }}>{{ nome }}</option>{% endfor %}
+      </select>
+      <select name="situacao" aria-label="Situação">
+        <option value="">Qualquer situação</option>
+        {% for s in situacoes %}<option {{ 'selected' if s == situacao }}>{{ s }}</option>{% endfor %}
+      </select>
+      <label class="suave">de <input type="date" name="desde" value="{{ desde }}"></label>
+      <label class="suave">até <input type="date" name="ate" value="{{ ate }}"></label>
+      <select name="versao" aria-label="Versão do texto">
+        <option value="consolidado" {{ 'selected' if versao == 'consolidado' }}>Texto consolidado vigente (quando houver)</option>
+        <option value="alterada" {{ 'selected' if versao == 'alterada' }}>Texto alterado (sem a redação tachada nos resultados)</option>
+        <option value="original" {{ 'selected' if versao == 'original' }}>Redação original</option>
+      </select>
+      <label class="suave"><input type="checkbox" name="ap" value="1" {{ 'checked' if ap }}> incluir editais e relatórios de audiência pública</label>
+    </div>
+  </form>
+  <p class="suave pequeno" style="margin:10px 0 0">
+    Palavras são buscadas sem distinção de acentos e maiúsculas; use aspas para expressão exata.
+    Referências como "Resolução CVM 50, artigo 1" levam direto ao dispositivo. Filtros de espécie, situação e
+    período valem para a busca por palavras.
+  </p>
+</div>
+
+{% if q %}
+  {% if ap and not referencia %}
+  <h2>Audiências públicas: {{ achados_ap|length }} trecho{{ 's' if achados_ap|length != 1 }}{% if achados_ap|length == 30 %} (limite de 30){% endif %}</h2>
+  <div class="painel">
+  {% for a in achados_ap %}
+    <div class="resultado">
+      <div class="cabeca">
+        <a href="/audiencia/{{ a.audiencia_id }}?texto={{ a.texto_id }}#p{{ a.ordem }}"><strong>Audiência Pública {{ a.codigo or a.audiencia_id }}</strong></a>
+        <span class="rotulo">{{ a.secao }}: {{ a.rotulo }}</span>
+      </div>
+      <div>{{ trecho_marcado(a.trecho)|safe }}</div>
+      <div class="pequeno"><a href="{{ a.url }}" target="_blank" rel="noopener">arquivo oficial ↗</a></div>
+    </div>
+  {% else %}
+    <p class="suave">Nenhum trecho nos editais e relatórios coletados.</p>
+  {% endfor %}
+  </div>
+  {% endif %}
+  {% if abrir %}
+  <p class="aviso info">Norma localizada: <a href="/norma/{{ abrir.id }}?versao={{ versao }}"><strong>{{ abrir.titulo }}</strong></a>
+     — abrir a página completa.</p>
+  {% endif %}
+  <h2>{{ achados|length }} resultado{{ 's' if achados|length != 1 }}{% if achados|length == 100 %} (limite de 100; refine a busca){% endif %}</h2>
+  {% if not achados %}
+    <p class="suave">Nenhum resultado no acervo local. O acervo ainda não contém todas as normas da CVM.</p>
+  {% endif %}
+  <div class="painel">
+  {% for a in achados %}
+    <div class="resultado">
+      <div class="cabeca">
+        <a href="/norma/{{ a.documento_id }}?versao={{ versao }}{{ '&parte=' ~ chave_parte(a.parte) if a.parte }}{{ ancora_texto(a.inicio) }}"><strong>{{ a.titulo }}</strong></a>
+        <span class="rotulo">{{ a.rotulo }}</span>
+        {{ selo_situacao(a.situacao) }}
+        <span class="suave pequeno">{{ a.versao or 'sem texto integral' }}</span>
+      </div>
+      <div>{{ trecho_marcado(a.texto)|safe }}</div>
+      <div class="pequeno"><a href="{{ a.url_oficial }}" target="_blank" rel="noopener">fonte oficial ↗</a></div>
+    </div>
+  {% endfor %}
+  </div>
+{% else %}
+  <h2>Acervo</h2>
+  <p>{{ cob.acervo.documentos }} normas no acervo, {{ cob.acervo.com_texto }} com texto integral aprovado
+     (qualidade alta: {{ cob.acervo.qualidade['alta'] }}, média: {{ cob.acervo.qualidade['média'] }}, baixa: {{ cob.acervo.qualidade['baixa'] }}).
+     {% if cob.totais.catalogo %}O catálogo oficial da CVM lista {{ cob.totais.catalogo }} atos nas espécies lidas
+     ({{ cob.totais.pct }}% no acervo).{% endif %}
+     <a href="/normas">Ver todas</a> · <a href="/relatorios">cobertura em relação à CVM</a></p>
+  <p class="suave pequeno">O acervo local ainda não reúne todas as normas da CVM: ausência de resultado não significa
+     que a norma não exista.</p>
+{% endif %}
+{% endblock %}
